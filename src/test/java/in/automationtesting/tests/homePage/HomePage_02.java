@@ -1,4 +1,4 @@
-package in.automationtesting.tests;
+package in.automationtesting.tests.homePage;
 
 import in.automationtesting.pages.HomePage;
 import in.automationtesting.utilities.ConfigurationReader;
