@@ -22,5 +22,7 @@ public class HomePage {
     @FindBy(xpath = "//div[@id='tab-description']") public WebElement description;
     @FindBy(xpath = "//li[@class='reviews_tab']")  public WebElement reviews;
     @FindBy(xpath = "//h2[@class='woocommerce-Reviews-title']") public WebElement reviewsToReview;
-
+    @FindBy(xpath = "//a[@class=\"button wc-forward\"]")  public WebElement viewBasketButton;
+    @FindBy(xpath = "//div[@class=\"cart_totals \"]")  public WebElement basketTotals;
+    @FindBy(xpath = "//a[@class='checkout-button button alt wc-forward']") public WebElement proceedToCheckoutButton;
 }

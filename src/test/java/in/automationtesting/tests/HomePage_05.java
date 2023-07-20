@@ -26,7 +26,7 @@ public class HomePage_05 {
     }
 
     @Test
-    public void homePage_05() {
+    public void homePage_06() {
         homePage.shopMenuButton.click();
         Driver.getDriver().navigate().refresh();
 
@@ -64,13 +64,12 @@ public class HomePage_05 {
         softAssert.assertTrue(homePage.addToBasketButton.isSelected(), "homePage.addToBasketButton.is not Selected!!");
         Driver.getDriver().navigate().refresh();
 
-        //10) Now clock on Reviews tab for the book you clicked on.
+        //10) Now click on Reviews tab for the book you clicked on.
         ReusableMethods.clickWithJS(homePage.reviews);
         actions.doubleClick(homePage.reviews).perform();
 
         //11) There should be a description regarding that book the user clicked on
         softAssert.assertTrue(homePage.reviewsToReview.isDisplayed(), "reviews is not Displayed!!");
-
         softAssert.assertAll();
 
     }
