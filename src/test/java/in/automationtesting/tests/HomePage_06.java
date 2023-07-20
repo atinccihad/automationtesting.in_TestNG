@@ -15,6 +15,7 @@ public class HomePage_06 {
     HomePage homePage = new HomePage();
     Actions actions = new Actions(Driver.getDriver());
     SoftAssert softAssert = new SoftAssert();
+
     @BeforeClass
     public void getUrl() {
         //1) Open the browser
