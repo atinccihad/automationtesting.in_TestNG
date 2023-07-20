@@ -1,4 +1,4 @@
-package in.automationtesting.tests.homePage;
+package in.automationtesting.tests.p1_homePage;
 
 import in.automationtesting.pages.HomePage;
 import in.automationtesting.utilities.ConfigurationReader;
@@ -10,9 +10,12 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
-public class HomePage_02 {
-    //2. Home page with three Arrivals only
+public class HomePage_03_FAIL_ {
+
+    //3. Home page - Images in Arrivals should navigate
+
     HomePage homePage = new HomePage();
     Actions actions = new Actions(Driver.getDriver());
 
@@ -24,7 +27,7 @@ public class HomePage_02 {
     }
 
     @Test
-    public void homePage_02() throws InterruptedException {
+    public void homePage_03() throws InterruptedException {
         homePage.shopMenuButton.click();
         Driver.getDriver().navigate().refresh();
 
@@ -43,6 +46,24 @@ public class HomePage_02 {
         //6) The Home page must contains only three Arrivals
         Driver.getDriver().navigate().refresh();
         actions.sendKeys(Keys.PAGE_DOWN).sendKeys(Keys.PAGE_DOWN).perform();
-        assertEquals(homePage.arrivals.size(), 3, "Expected value three arrivals, actual value " + homePage.arrivals.size());
+        //assertEquals(homePage.arrivals.size(), 3, "Expected value three arrivals, actual value " + homePage.arrivals.size());
+
+        //7) Now click the image in the Arrivals
+        for (int i = 0; i < homePage.arrivals.size(); i++) {
+            ReusableMethods.clickWithJS(homePage.arrivals.get(i));
+            ReusableMethods.waitFor(1);
+            Driver.getDriver().navigate().back();
+        }
+
+
+        //8) Test whether it is navigating to next page where the user can add that book into his basket.
+        ReusableMethods.clickWithJS(homePage.arrivals.get(0));
+        assertTrue(homePage.addToBasketButton.isDisplayed(), "homePage.addToBasketButton.is not Displayed !!");
+
+        //9) Image should be clickable and shoul navigate to next page where user can add that book to his basket
+        assertTrue(homePage.firstArrivalImage.isEnabled(), "Image not should be clickable!!");
+        ReusableMethods.clickWithJS(homePage.firstArrivalImage);
+        assertTrue(homePage.addToBasketButton.isSelected(),"homePage.addToBasketButton.is not Selected!!");
+
     }
 }
