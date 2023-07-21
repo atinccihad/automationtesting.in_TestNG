@@ -6,6 +6,7 @@ import in.automationtesting.utilities.Driver;
 import in.automationtesting.utilities.ReusableMethods;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -79,6 +80,11 @@ public class HomeArrivals_01 {
         ReusableMethods.clickWithJS(homePage.proceedToCheckoutButton);
 
         softAssert.assertAll();
+    }
+
+    @AfterClass
+    public void closeDriver() {
+        Driver.getDriver().close();
     }
 
 }
