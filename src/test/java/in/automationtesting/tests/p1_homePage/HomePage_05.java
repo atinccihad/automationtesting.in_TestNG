@@ -6,6 +6,7 @@ import in.automationtesting.utilities.Driver;
 import in.automationtesting.utilities.ReusableMethods;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -72,6 +73,10 @@ public class HomePage_05 {
         softAssert.assertTrue(homePage.reviewsToReview.isDisplayed(), "reviews is not Displayed!!");
         softAssert.assertAll();
 
+    }
+    @AfterClass
+    public void closeDriver() {
+        Driver.getDriver().close();
     }
 
 }
