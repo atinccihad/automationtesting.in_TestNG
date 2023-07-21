@@ -6,6 +6,7 @@ import in.automationtesting.utilities.Driver;
 import in.automationtesting.utilities.ReusableMethods;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -44,5 +45,10 @@ public class HomePage_01 {
         Driver.getDriver().navigate().refresh();
         actions.sendKeys(Keys.PAGE_DOWN).sendKeys(Keys.PAGE_DOWN).perform();
         assertEquals(homePage.sliders.size(), 3, "Expected value three sliders, actual value " + homePage.sliders.size());
+    }
+
+    @AfterClass
+    public void closeDriver(){
+        Driver.getDriver().close();
     }
 }
