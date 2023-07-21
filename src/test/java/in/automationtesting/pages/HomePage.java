@@ -30,5 +30,8 @@ public class HomePage {
     @FindBy(xpath = "//div[@class=\"images\"]") public WebElement bookImage;
     @FindBy(xpath = "//span[@class=\"woocommerce-Price-amount amount\"]") public WebElement price;
     @FindBy(xpath = "//a[@class='wpmenucart-contents']") public WebElement itemsAndPriceLinkButton;
-
+    @FindBy(css = "#coupon_code") public WebElement couponCodeBox;
+    public String couponCode = "krishnasakinala";
+    public String expectedIndirimTutari = "50";
+    @FindBy(xpath = "(//td[@data-title=\"Total\"])[2]") public WebElement indirimliTotal;
 }
