@@ -6,6 +6,7 @@ import in.automationtesting.utilities.Driver;
 import in.automationtesting.utilities.ReusableMethods;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -63,7 +64,13 @@ public class HomePage_03_FAIL_ {
         //9) Image should be clickable and shoul navigate to next page where user can add that book to his basket
         assertTrue(homePage.firstArrivalImage.isEnabled(), "Image not should be clickable!!");
         ReusableMethods.clickWithJS(homePage.firstArrivalImage);
-        assertTrue(homePage.addToBasketButton.isSelected(),"homePage.addToBasketButton.is not Selected!!");
+        assertTrue(homePage.addToBasketButton.isSelected(), "homePage.addToBasketButton.is not Selected!!");
 
     }
+
+    @AfterClass
+    public void closeDriver() {
+        Driver.getDriver().close();
+    }
+
 }
