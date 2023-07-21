@@ -26,6 +26,7 @@ public class HomePage {
     @FindBy(xpath = "//div[@class=\"cart_totals \"]")  public WebElement basketTotals;
     @FindBy(xpath = "//a[@class='checkout-button button alt wc-forward']") public WebElement proceedToCheckoutButton;
     @FindBy(xpath = "//input[@class='input-text qty text']") public WebElement quantityBox;
-
     @FindBy(xpath = "//input[@class=\"input-text qty text\"]") public WebElement addToBasketYanindakiBox;
+
+
 }
