@@ -6,6 +6,7 @@ import in.automationtesting.utilities.Driver;
 import in.automationtesting.utilities.ReusableMethods;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -67,6 +68,11 @@ public class HomePage_04 {
 
         //11) There should be a description regarding that book the user clicked on
         assertTrue(homePage.description.isDisplayed(),"description is not Displayed!!");
+    }
+
+    @AfterClass
+    public void closeDriver() {
+        Driver.getDriver().close();
     }
 
 }
