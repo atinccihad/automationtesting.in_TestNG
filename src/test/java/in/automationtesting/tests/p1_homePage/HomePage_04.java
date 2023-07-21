@@ -69,7 +69,6 @@ public class HomePage_04 {
         //11) There should be a description regarding that book the user clicked on
         assertTrue(homePage.description.isDisplayed(),"description is not Displayed!!");
     }
-
     @AfterClass
     public void closeDriver() {
         Driver.getDriver().close();
