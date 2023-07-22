@@ -24,7 +24,7 @@ public class HomeArrivals_03 {
     }
 
     @Test
-    public void homeArrivals_02() {
+    public void homeArrivals_03() {
 
         ///3) Click on Shop Menu
         homePage.shopMenuButton.click();
