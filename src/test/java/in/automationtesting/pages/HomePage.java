@@ -32,6 +32,9 @@ public class HomePage {
     @FindBy(xpath = "//a[@class='wpmenucart-contents']") public WebElement itemsAndPriceLinkButton;
     @FindBy(css = "#coupon_code") public WebElement couponCodeBox;
     public String couponCode = "krishnasakinala";
-    public String expectedIndirimTutari = "50";
+    public String ilkIndirimli = "";
+    public String ikinciIndirimli = "";
+    public String basketTotalsTotal = "";
     @FindBy(xpath = "(//td[@data-title=\"Total\"])[2]") public WebElement indirimliTotal;
+
 }
