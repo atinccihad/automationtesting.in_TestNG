@@ -22,9 +22,9 @@ public class HomeArrivals_04 {
         //2) Enter the URL “http://practice.automationtesting.in/”
         Driver.getDriver().get(ConfigurationReader.getProperty("base_url"));
     }
+
     @Test
     public void homeArrivals_04() {
-
         ///3) Click on Shop Menu
         homePage.shopMenuButton.click();
         Driver.getDriver().navigate().refresh();
@@ -83,7 +83,7 @@ public class HomeArrivals_04 {
         homePage.couponCodeBox.sendKeys(homePage.couponCode, Keys.ENTER);
         homePage.ikinciIndirimli = homePage.indirimliTotal.getText();
         System.out.println("ikinciIndirimli = " + homePage.ikinciIndirimli);
-        softAssert.assertNotEquals(homePage.ilkIndirimli,homePage.ikinciIndirimli,"2.indirim uygulanmadi, çünkü kupon kitap fiyatı > 450 rps için geçerlidir!");
+        softAssert.assertNotEquals(homePage.ilkIndirimli, homePage.ikinciIndirimli, "2.indirim uygulanmadi, çünkü kupon kitap fiyatı > 450 rps için geçerlidir!");
 
         softAssert.assertAll();
     }
