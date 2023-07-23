@@ -1,5 +1,6 @@
 package in.automationtesting.utilities;
 
+import in.automationtesting.pages.HomePage;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.*;
@@ -14,7 +15,9 @@ import java.util.List;
 import java.util.Random;
 import java.util.function.Function;
 
+
 public class ReusableMethods {
+    public static HomePage homePage = new HomePage();
     private static int timeout = 5;
 
     public static String getScreenshot(String name) throws IOException {
@@ -367,4 +370,18 @@ public class ReusableMethods {
         JavascriptExecutor jsexecutor = ((JavascriptExecutor) Driver.getDriver());
         jsexecutor.executeScript("arguments[0].scrollIntoView(true);", element);
     }
+
+    public static void login(){
+        Driver.getDriver().navigate().refresh();
+        ReusableMethods.clickWithJS(homePage.myAccountButton);
+        homePage.myAccountButton.click();
+        Driver.getDriver().navigate().refresh();
+        homePage.myAccountButton.click();
+        homePage.emailBox.sendKeys(ConfigurationReader.getProperty("username"));
+        homePage.passwordBox.sendKeys(ConfigurationReader.getProperty("password"));
+        homePage.loginButton.click();
+        homePage.shopMenuButton.click();
+        Driver.getDriver().navigate().refresh();
+    }
+
 }

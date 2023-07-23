@@ -36,5 +36,13 @@ public class HomePage {
     public String ikinciIndirimli = "";
     public String basketTotalsTotal = "";
     @FindBy(xpath = "(//td[@data-title=\"Total\"])[2]") public WebElement indirimliTotal;
+    @FindBy(id = "menu-item-50") public WebElement myAccountButton;
+    @FindBy(css = "#username") public WebElement emailBox;
+    @FindBy(css = "#password") public WebElement passwordBox;
+    @FindBy(xpath = "//input[@class='woocommerce-Button button']") public WebElement loginButton;
+    @FindBy(xpath = "//a[@title='Remove this item']") public List<WebElement> itemRemoveIconList;
+    @FindBy(xpath = "//div[@class='woocommerce-message']") public WebElement bookRemovedText;
+    @FindBy(xpath = "//li[@class='wpmenucartli wpmenucart-display-standard menu-item']") public WebElement sepetItemFiyatSagUst;
+
 
 }
