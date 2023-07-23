@@ -6,6 +6,7 @@ import in.automationtesting.utilities.Driver;
 import in.automationtesting.utilities.ReusableMethods;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -15,6 +16,7 @@ public class HomeArrivals_02 {
     HomePage homePage = new HomePage();
     Actions actions = new Actions(Driver.getDriver());
     SoftAssert softAssert = new SoftAssert();
+
     @BeforeClass
     public void getUrl() {
         //1) Open the browser
@@ -62,14 +64,20 @@ public class HomeArrivals_02 {
         ReusableMethods.clickWithJS(homePage.addToBasketButton);
 
         //11) User can view that Book in the Menu item with price.
-        softAssert.assertTrue(homePage.bookImage.isDisplayed(),"homePage.bookImage.is not Displayed!!");
-        softAssert.assertTrue(homePage.price.isDisplayed(),"homePage.price.is not Displayed!!");
+        softAssert.assertTrue(homePage.bookImage.isDisplayed(), "homePage.bookImage.is not Displayed!!");
+        softAssert.assertTrue(homePage.price.isDisplayed(), "homePage.price.is not Displayed!!");
 
         //12) Now click on Item link which navigates to proceed to check out page.
         homePage.itemsAndPriceLinkButton.click();
 
         //13) User can click on the Item link in menu item after adding the book in to the basket which leads to the check out page
-        softAssert.assertTrue(homePage.proceedToCheckoutButton.isEnabled(),"proceedToCheckoutButton is not Selected!!");
+        softAssert.assertTrue(homePage.proceedToCheckoutButton.isEnabled(), "proceedToCheckoutButton is not Selected!!");
         softAssert.assertAll();
     }
+
+    @AfterClass
+    public void closeDriver() {
+        Driver.getDriver().close();
+    }
+
 }
