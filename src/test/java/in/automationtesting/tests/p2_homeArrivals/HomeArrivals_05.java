@@ -25,7 +25,6 @@ public class HomeArrivals_05 {
         ReusableMethods.login();
     }
 
-    //        ReusableMethods.waitAndClick(homePage.myAccountButton,4);
     @Test
     public void homeArrivals_05() {
         ///3) Click on Shop Menu
