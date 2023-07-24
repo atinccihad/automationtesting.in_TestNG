@@ -11,7 +11,7 @@ public class HomePage {
 
     public HomePage(){ PageFactory.initElements(Driver.getDriver(),this); }
 
-    @FindBy(xpath = "//li[@id='menu-item-40']") public WebElement shopMenuButton;
+    @FindBy(xpath = "//a[@href=\"https://practice.automationtesting.in/shop/\"]") public WebElement shopMenuButton;
     @FindBy(xpath = "//a[@class='woocommerce-LoopProduct-link']") public List<WebElement> sliders;
     @FindBy(xpath = "(//a[@href=\"https://practice.automationtesting.in\"])[2]") public WebElement homeMenuButton;
     @FindBy(xpath = "(//img[@loading=\"lazy\"])") public List<WebElement> arrivals;
@@ -46,6 +46,10 @@ public class HomePage {
     @FindBy(xpath = "//td[@class='product-quantity']") public WebElement auantityBox;
     @FindBy(xpath = "(//input[@class='button'])[2]") public WebElement updateBasketButton;
     @FindBy(xpath = "//strong[@class=\"product-quantity\"]") public WebElement yourOrderUrunMiktarElementi;
+    @FindBy(xpath = "(//span[@class=\"woocommerce-Price-amount amount\"])[5]") public WebElement total;
+    @FindBy(xpath = "(//span[@class=\"woocommerce-Price-amount amount\"])[3]") public WebElement subtotal;
+    @FindBy(xpath = "(//span[@class=\"woocommerce-Price-amount amount\"])[4]") public WebElement tax;
+
 
 
 }
