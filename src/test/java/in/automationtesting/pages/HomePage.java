@@ -13,7 +13,7 @@ public class HomePage {
 
     @FindBy(xpath = "//a[@href=\"https://practice.automationtesting.in/shop/\"]") public WebElement shopMenuButton;
     @FindBy(xpath = "//a[@class='woocommerce-LoopProduct-link']") public List<WebElement> sliders;
-    @FindBy(xpath = "(//a[@href=\"https://practice.automationtesting.in\"])[2]") public WebElement homeMenuButton;
+    @FindBy(xpath = "//div/nav/a") public WebElement homeMenuButton;
     @FindBy(xpath = "(//img[@loading=\"lazy\"])") public List<WebElement> arrivals;
     @FindBy(xpath = "(//img[@loading=\"lazy\"])[1]") public WebElement firstArrival;
     @FindBy(className = "woocommerce-message") public WebElement hasBeenAddedToYourBasket;
