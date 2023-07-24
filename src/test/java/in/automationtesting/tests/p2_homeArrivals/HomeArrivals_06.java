@@ -72,9 +72,6 @@ public class HomeArrivals_06 {
         //13) Click on textbox value under quantity in Check out page to add or subtract books.
         homePage.itemsAndPriceLinkButton.click();
 
-        //ReusableMethods.clickWithJS(homePage.proceedToCheckoutButton);
-
-
         //14) Now after the above change ‘Update Basket’ button will turn into Clickable mode.
         homePage.quantityBox.sendKeys("2");
         softAssert.assertTrue(homePage.updateBasketButton.isSelected());
