@@ -50,9 +50,6 @@ public class HomePage {
     @FindBy(xpath = "(//span[@class=\"woocommerce-Price-amount amount\"])[3]") public WebElement subtotal;
     @FindBy(xpath = "(//span[@class=\"woocommerce-Price-amount amount\"])[4]") public WebElement tax;
     public String checkoutUrl = "https://practice.automationtesting.in/checkout/";
-
-
-
     @FindBy(css = "#billing_first_name") public WebElement billingdetailsFirstname;
     @FindBy(css = "#billing_last_name") public WebElement billingdetailsLastname;
     @FindBy(css = "#billing_company") public WebElement billingdetailsCompanyname;
