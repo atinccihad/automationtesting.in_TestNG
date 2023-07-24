@@ -43,6 +43,9 @@ public class HomePage {
     @FindBy(xpath = "//a[@title='Remove this item']") public List<WebElement> itemRemoveIconList;
     @FindBy(xpath = "//div[@class='woocommerce-message']") public WebElement bookRemovedText;
     @FindBy(xpath = "//li[@class='wpmenucartli wpmenucart-display-standard menu-item']") public WebElement sepetItemFiyatSagUst;
+    @FindBy(xpath = "//td[@class='product-quantity']") public WebElement auantityBox;
+    @FindBy(xpath = "(//input[@class='button'])[2]") public WebElement updateBasketButton;
+    @FindBy(xpath = "//strong[@class=\"product-quantity\"]") public WebElement yourOrderUrunMiktarElementi;
 
 
 }

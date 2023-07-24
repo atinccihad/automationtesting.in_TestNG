@@ -384,4 +384,10 @@ public class ReusableMethods {
         Driver.getDriver().navigate().refresh();
     }
 
+    public static void jsExecutorScrool(WebElement webElement){
+        JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
+        // Belirli webElement element seviyesine scroll
+        js.executeScript("arguments[0].scrollIntoView(true);",webElement);
+    }
+
 }
