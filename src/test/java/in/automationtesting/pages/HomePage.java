@@ -53,4 +53,23 @@ public class HomePage {
 
 
 
+    @FindBy(css = "#billing_first_name") public WebElement billingdetailsFirstname;
+    @FindBy(css = "#billing_last_name") public WebElement billingdetailsLastname;
+    @FindBy(css = "#billing_company") public WebElement billingdetailsCompanyname;
+    @FindBy(css = "#billing_email") public WebElement billingdetailsEmailaddress;
+    @FindBy(css = "#billing_phone") public WebElement billingdetailsPhone;
+    @FindBy(id = "select2-drop-mask") public WebElement billingdetailsCountry;
+    @FindBy(xpath = "//input[@id='billing_address_1']") public WebElement billingdetailsAddress;
+    @FindBy(xpath = "//input[@id='billing_address_2']") public WebElement billingdetailsAddress2;
+    @FindBy(xpath = "//input[@id='billing_city']") public WebElement billingdetailsTownCity;
+    @FindBy(xpath = "//p[@id='billing_state_field']") public WebElement billingdetailsStateCountry;
+    @FindBy(xpath = "//input[@id='billing_postcode']") public WebElement billingdetailsPostcodeZIP;
+    @FindBy(xpath = "//div[@id=\"payment\"]") public WebElement billingdetailsBanktransferPayments;
+    @FindBy(xpath = "//div[@class=\"woocommerce-info\"]") public WebElement billingdetailsHaveACouponElement;
+
+
+
+
+
+
 }
