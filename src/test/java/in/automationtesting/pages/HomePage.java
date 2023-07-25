@@ -68,6 +68,7 @@ public class HomePage {
     @FindBy(xpath = "//table[@class='shop_table customer_details']") public WebElement billingdetailsCustomerDetails;
     @FindBy(xpath = "//div/address") public WebElement billingdetailsBillingAdress;
     @FindBy(className = "woocommerce-MyAccount-content") public WebElement welcomeText;
+    @FindBy(className = "woocommerce-error") public WebElement wrongUsernameInfo;
 
 
 
