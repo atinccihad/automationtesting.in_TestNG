@@ -63,6 +63,10 @@ public class HomePage {
     @FindBy(xpath = "//input[@id='billing_postcode']") public WebElement billingdetailsPostcodeZIP;
     @FindBy(xpath = "//div[@id=\"payment\"]") public WebElement billingdetailsBanktransferPayments;
     @FindBy(xpath = "//div[@class=\"woocommerce-info\"]") public WebElement billingdetailsHaveACouponElement;
+    @FindBy(css = "#place_order") public WebElement billingdetailsPlaceOrderButton;
+    @FindBy(xpath = "//table[@class='shop_table order_details']") public WebElement billingdetailsOrderDetails;
+    @FindBy(xpath = "//table[@class='shop_table customer_details']") public WebElement billingdetailsCustomerDetails;
+    @FindBy(xpath = "//div/address") public WebElement billingdetailsBillingAdress;
 
 
 
