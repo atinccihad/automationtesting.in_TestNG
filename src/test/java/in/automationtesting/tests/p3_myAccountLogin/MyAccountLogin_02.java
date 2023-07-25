@@ -34,7 +34,7 @@ public class MyAccountLogin_02 {
         //6) Click on login button
         homePage.loginButton.click();
         //7) Proper error must be displayed(ie Invalid username) and prompt to enter login again
-        assert homePage.wrongUsernameInfo.isDisplayed();
+        assert homePage.wrongText.isDisplayed();
         Driver.getDriver().navigate().refresh();
     }
 
