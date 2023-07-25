@@ -3,14 +3,14 @@ package in.automationtesting.tests.p3_myAccountLogin;
 import in.automationtesting.pages.HomePage;
 import in.automationtesting.utilities.ConfigurationReader;
 import in.automationtesting.utilities.Driver;
-import in.automationtesting.utilities.Report;
+import in.automationtesting.utilities.TestBaseRapor;
 import in.automationtesting.utilities.ReusableMethods;
 import org.openqa.selenium.Keys;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class MyAccountLogin_07 extends Report {
+public class MyAccountLogin_07 extends TestBaseRapor {
     //25. Login-Handles case sensitive
     HomePage homePage = new HomePage();
 
@@ -41,6 +41,7 @@ public class MyAccountLogin_07 extends Report {
         //6) Click on login button
         homePage.loginButton.click();
         extentTest.info("login button tiklandi.");
+
         //7) Proper error must be displayed(ie Invalid username) and prompt to enter login again
         assert homePage.wrongText.isDisplayed();
         Driver.getDriver().navigate().refresh();

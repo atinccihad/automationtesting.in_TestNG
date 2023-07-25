@@ -4,13 +4,14 @@ import in.automationtesting.pages.HomePage;
 import in.automationtesting.utilities.ConfigurationReader;
 import in.automationtesting.utilities.Driver;
 import in.automationtesting.utilities.ReusableMethods;
-import in.automationtesting.utilities.Report;
+import in.automationtesting.utilities.TestBaseRapor;
+import org.openqa.selenium.Keys;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class MyAccountLogin_08 extends Report {
+public class MyAccountLogin_08 extends TestBaseRapor {
     HomePage homePage = new HomePage();
 
     @BeforeClass
@@ -45,7 +46,7 @@ public class MyAccountLogin_08 extends Report {
         extentTest.info("Giriş yaptıktan sonra siteden çıkış yapıldı.");
         //8) Now press back button
         Driver.getDriver().navigate().back();
-        extentTest.info("Geri düğmesine basıldı.");
+        extentTest.info("Geri düğmesine tiklandi.");
         //9) User shouldn’t be signed in to his account rather a general webpage must be visible
         Assert.assertEquals(Driver.getDriver().getCurrentUrl(),ConfigurationReader.getProperty("myaccountUrl"),"Beklenmedik sekilde oturum acildi!!");
         Driver.getDriver().navigate().refresh();

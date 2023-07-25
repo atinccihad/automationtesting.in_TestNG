@@ -4,12 +4,13 @@ import in.automationtesting.pages.HomePage;
 import in.automationtesting.utilities.ConfigurationReader;
 import in.automationtesting.utilities.Driver;
 import in.automationtesting.utilities.ReusableMethods;
+import in.automationtesting.utilities.TestBaseRapor;
 import org.openqa.selenium.Keys;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class MyAccountLogin_05 {
+public class MyAccountLogin_05 extends TestBaseRapor {
     HomePage homePage = new HomePage();
 
     @BeforeClass
@@ -21,6 +22,7 @@ public class MyAccountLogin_05 {
 
     @Test
     public void myAccountLogin_05() {
+        extentTest = extentReports.createTest("myAccountLogin_08", "Gecerli username ve sifre ile giris yapabilmeli.");
         //3) Click on My Account Menu
         Driver.getDriver().navigate().refresh();
         ReusableMethods.clickWithJS(homePage.myAccountButton);
@@ -28,19 +30,26 @@ public class MyAccountLogin_05 {
         //4) Enter empty username in username textbox
         Driver.getDriver().navigate().refresh();
         homePage.myAccountButton.click();
+        extentTest.info("myAccountButton is clicked.");
         homePage.emailBox.sendKeys("", Keys.ENTER);
+        extentTest.info("Kullanıcı adı metin kutusuna  ''  kullanıcı adı girildi.");
         //5) Now enter valid password in the password textbox
         ReusableMethods.clickWithJS(homePage.passwordBox);
         homePage.passwordBox.sendKeys("", Keys.ENTER);
+        extentTest.info("Parola metin kutusuna  ''  parola girildi.");
         //6) Click on login button
         homePage.loginButton.click();
+        extentTest.info("Giriş düğmesine tıklandi.");
         //7) Proper error must be displayed(ie Invalid username) and prompt to enter login again
         assert homePage.wrongText.isDisplayed();
         Driver.getDriver().navigate().refresh();
+        extentTest.pass("PASS");
     }
 
     @AfterClass
-    public void closeDriver() {Driver.closeDriver();}
+    public void closeDriver() {
+        Driver.closeDriver();
+    }
 
 }
 
