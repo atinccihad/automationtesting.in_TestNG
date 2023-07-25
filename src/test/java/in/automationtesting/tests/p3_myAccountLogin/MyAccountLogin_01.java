@@ -4,13 +4,14 @@ import in.automationtesting.pages.HomePage;
 import in.automationtesting.utilities.ConfigurationReader;
 import in.automationtesting.utilities.Driver;
 import in.automationtesting.utilities.ReusableMethods;
+import in.automationtesting.utilities.TestBaseRapor;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-public class MyAccountLogin_01 {
+public class MyAccountLogin_01 extends TestBaseRapor {
     //19. Log-in with valid username and password
     HomePage homePage = new HomePage();
 
@@ -28,8 +29,11 @@ public class MyAccountLogin_01 {
 
     @Test
     public void myAccountLogin_01() {
+        extentTest = extentReports.createTest("myAccountLogin_08","Gecerli username ve sifre ile giris yapabilmeli.");
         //7) User must successfully login to the web page
         assert homePage.welcomeText.isDisplayed();
+        extentTest.info("welcomeText.isDisplayed.");
+        extentTest.pass("PASS");
     }
 
     @AfterClass
