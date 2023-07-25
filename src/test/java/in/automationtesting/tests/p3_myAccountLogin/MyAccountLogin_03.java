@@ -21,7 +21,7 @@ public class MyAccountLogin_03  extends TestBaseRapor {
 
     @Test
     public void myAccountLogin_03() {
-        extentTest = extentReports.createTest("myAccountLogin_08","Gecerli username ve sifre ile giris yapabilmeli.");
+        extentTest = extentReports.createTest("myAccountLogin_08","Gecerli username ve yanlis sifre ile giris yapilamamali.");
         //3) Click on My Account Menu
         Driver.getDriver().navigate().refresh();
         ReusableMethods.clickWithJS(homePage.myAccountButton);
