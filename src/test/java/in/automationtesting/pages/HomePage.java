@@ -69,10 +69,5 @@ public class HomePage {
     @FindBy(xpath = "//div/address") public WebElement billingdetailsBillingAdress;
     @FindBy(className = "woocommerce-MyAccount-content") public WebElement welcomeText;
     @FindBy(className = "woocommerce-error") public WebElement wrongText;
-
-
-
-
-
-
+    @FindBy(xpath = "(//a[@href=\"https://practice.automationtesting.in/my-account/customer-logout/\"])[2]") public WebElement signout;
 }
