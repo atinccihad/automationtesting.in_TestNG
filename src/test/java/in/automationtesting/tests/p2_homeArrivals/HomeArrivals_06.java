@@ -92,6 +92,7 @@ public class HomeArrivals_06 extends TestBaseRapor {
         extentTest.info("subtotal price is displayed.");
         softAssert.assertTrue(homePage.tax.isDisplayed(), "tax price is not displayed!!");
         extentTest.info("tax price is displayed.");
+        extentTest.pass("PASS");
         softAssert.assertAll();
     }
 
