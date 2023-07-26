@@ -23,7 +23,6 @@ public class HomeArrivals_01 extends TestBaseRapor {
 
     @BeforeClass
     public void getUrl() {
-        extentTest = extentReports.createTest("myAccountLogin_08", "Arrivals-Add to Basket-Items.");
         //1) Open the browser
         //2) Enter the URL “http://practice.automationtesting.in/”
         Driver.getDriver().get(ConfigurationReader.getProperty("base_url"));
@@ -31,6 +30,7 @@ public class HomeArrivals_01 extends TestBaseRapor {
 
     @Test
     public void homeArrivals_01() {
+        extentTest = extentReports.createTest("HomeArrivals_01", "Arrivals-Add to Basket-Items.");
         homePage.shopMenuButton.click();
         Driver.getDriver().navigate().refresh();
 

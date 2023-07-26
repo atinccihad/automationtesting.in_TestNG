@@ -4,6 +4,7 @@ import in.automationtesting.pages.HomePage;
 import in.automationtesting.utilities.ConfigurationReader;
 import in.automationtesting.utilities.Driver;
 import in.automationtesting.utilities.ReusableMethods;
+import in.automationtesting.utilities.TestBaseRapor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterClass;
@@ -11,7 +12,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-public class HomeArrivals_02 {
+public class HomeArrivals_02 extends TestBaseRapor {
     //8. Home-Arrivals-Add to Basket-Items
     HomePage homePage = new HomePage();
     Actions actions = new Actions(Driver.getDriver());
@@ -75,9 +76,5 @@ public class HomeArrivals_02 {
         softAssert.assertAll();
     }
 
-    @AfterClass
-    public void closeDriver() {
-        Driver.getDriver().close();
-    }
 
 }
