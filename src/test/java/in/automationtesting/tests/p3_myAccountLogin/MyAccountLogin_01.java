@@ -29,14 +29,11 @@ public class MyAccountLogin_01 extends TestBaseRapor {
 
     @Test
     public void myAccountLogin_01() {
-        extentTest = extentReports.createTest("myAccountLogin_08","Gecerli username ve sifre ile giris yapabilmeli.");
+        extentTest = extentReports.createTest("myAccountLogin_08", "Gecerli username ve sifre ile giris yapabilmeli.");
         //7) User must successfully login to the web page
         assert homePage.welcomeText.isDisplayed();
         extentTest.info("welcomeText.isDisplayed.");
         extentTest.pass("PASS");
     }
-
-    @AfterClass
-    public void closeDriver() {Driver.getDriver().close();}
 
 }
