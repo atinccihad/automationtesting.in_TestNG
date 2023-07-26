@@ -4,6 +4,7 @@ import in.automationtesting.pages.HomePage;
 import in.automationtesting.utilities.ConfigurationReader;
 import in.automationtesting.utilities.Driver;
 import in.automationtesting.utilities.ReusableMethods;
+import in.automationtesting.utilities.TestBaseRapor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterClass;
@@ -11,7 +12,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-public class HomeArrivals_11 {
+public class HomeArrivals_11 extends TestBaseRapor {
     //17. Home-Arrivals-Add to Basket-Items-Check-out-Payment Gateway
     HomePage homePage = new HomePage();
     Actions actions = new Actions(Driver.getDriver());
@@ -27,6 +28,7 @@ public class HomeArrivals_11 {
 
     @Test
     public void homeArrivals_05() {
+        extentTest = extentReports.createTest("myAccountLogin_08","Gecerli username ve sifre ile giris yapabilmeli.");
         ///3) Click on Shop Menu
         homePage.shopMenuButton.click();
         Driver.getDriver().navigate().refresh();
