@@ -24,11 +24,13 @@ public class MyAccountLogin_06 extends TestBaseRapor {
 
     @Test
     public void myAccountLogin_06() {
-        extentTest = extentReports.createTest("myAccountLogin_08","Gecerli username ve sifre ile giris yapabilmeli.");
+        extentTest = extentReports.createTest("myAccountLogin_08", "Gecerli username ve sifre ile giris yapabilmeli.");
+
         //3) Click on My Account Menu
         Driver.getDriver().navigate().refresh();
         ReusableMethods.clickWithJS(homePage.myAccountButton);
         homePage.myAccountButton.click();
+
         //4) Enter the password field with some characters.
         Driver.getDriver().navigate().refresh();
         ReusableMethods.clickWithJS(homePage.myAccountButton);
@@ -36,6 +38,7 @@ public class MyAccountLogin_06 extends TestBaseRapor {
         ReusableMethods.clickWithJS(homePage.passwordBox);
         homePage.passwordBox.sendKeys("/*+_$", Keys.ENTER);
         extentTest.info("Kullanıcı adı metin kutusuna  cesitli karakterler iceren kullanıcı adı girildi.");
+
         //5) The password field should display the characters
         // in asterisks or bullets such that the password is not visible on the screen
         assert homePage.wrongText.isDisplayed();
@@ -43,9 +46,6 @@ public class MyAccountLogin_06 extends TestBaseRapor {
         Driver.getDriver().navigate().refresh();
         extentTest.pass("PASS");
     }
-
-    @AfterClass
-    public void closeDriver() {Driver.closeDriver();}
 
 }
 
