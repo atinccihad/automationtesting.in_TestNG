@@ -23,21 +23,25 @@ public class MyAccountLogin_07 extends TestBaseRapor {
 
     @Test
     public void myAccountLogin_07() {
-        extentTest = extentReports.createTest("myAccountLogin_07","Gecerli username ve sifre ile giris yapabilmeli.");
+        extentTest = extentReports.createTest("myAccountLogin_07", "Gecerli username ve sifre ile giris yapabilmeli.");
+
         //3) Click on My Account Menu
         Driver.getDriver().navigate().refresh();
         ReusableMethods.clickWithJS(homePage.myAccountButton);
         homePage.myAccountButton.click();
+
         //4) Enter the case changed username in username textbox
         Driver.getDriver().navigate().refresh();
         homePage.myAccountButton.click();
         extentTest.info("myAccountButton is clicked.");
         homePage.emailBox.sendKeys("wrong", Keys.ENTER);
         extentTest.info("Kullanıcı adı metin kutusuna durum değiştirmeyen kullanıcı adı girildi.");
+
         //5) Enter the case chenged password in the password tetxbox
         ReusableMethods.clickWithJS(homePage.passwordBox);
         homePage.passwordBox.sendKeys("wrong", Keys.ENTER);
         extentTest.info("Parola metin kutusuna durum değiştirilen parola girildi.");
+
         //6) Click on login button
         homePage.loginButton.click();
         extentTest.info("login button tiklandi.");
@@ -46,9 +50,6 @@ public class MyAccountLogin_07 extends TestBaseRapor {
         assert homePage.wrongText.isDisplayed();
         Driver.getDriver().navigate().refresh();
     }
-
-    @AfterClass
-    public void closeDriver() {Driver.closeDriver();}
 
 }
 
