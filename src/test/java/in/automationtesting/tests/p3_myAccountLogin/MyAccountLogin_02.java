@@ -51,5 +51,4 @@ public class MyAccountLogin_02 extends TestBaseRapor {
         Driver.getDriver().navigate().refresh();
         extentTest.pass("PASS");
     }
-
 }
