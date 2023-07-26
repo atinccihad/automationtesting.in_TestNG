@@ -4,6 +4,7 @@ import in.automationtesting.pages.HomePage;
 import in.automationtesting.utilities.ConfigurationReader;
 import in.automationtesting.utilities.Driver;
 import in.automationtesting.utilities.ReusableMethods;
+import in.automationtesting.utilities.TestBaseRapor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterClass;
@@ -11,9 +12,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-import static org.testng.Assert.assertTrue;
 
-public class HomePage_05 {
+public class HomePage_05 extends TestBaseRapor {
     //5. Home page - Arrivals-Images-Reviews
     HomePage homePage = new HomePage();
     Actions actions = new Actions(Driver.getDriver());
@@ -27,7 +27,8 @@ public class HomePage_05 {
     }
 
     @Test
-    public void homePage_06() {
+    public void homePage_05() {
+        extentTest = extentReports.createTest("homePage_05", "Home page - Arrivals-Images-Reviews.");
         homePage.shopMenuButton.click();
         Driver.getDriver().navigate().refresh();
 
@@ -36,17 +37,20 @@ public class HomePage_05 {
         Driver.getDriver().navigate().refresh();
         ReusableMethods.waitFor(2);
         homePage.shopMenuButton.click();
+        extentTest.info("shopMenuButton is clicked.");
 
         //4) Now click on Home menu button
         homePage.homeMenuButton.click();
         Driver.getDriver().navigate().refresh();
         ReusableMethods.waitFor(2);
+        extentTest.info("homeMenuButton is clicked.");
 
         //5) Test whether the Home page has Three Arrivals only
         //6) The Home page must contains only three Arrivals
         Driver.getDriver().navigate().refresh();
         actions.sendKeys(Keys.PAGE_DOWN).sendKeys(Keys.PAGE_DOWN).perform();
         softAssert.assertEquals(homePage.arrivals.size(), 3, "Expected value three arrivals, actual value " + homePage.arrivals.size());
+        extentTest.info("The Home page must contains only three Arrivals.");
 
         //7) Now click the image in the Arrivals
         for (int i = 0; i < homePage.arrivals.size(); i++) {
@@ -54,29 +58,34 @@ public class HomePage_05 {
             ReusableMethods.waitFor(1);
             Driver.getDriver().navigate().back();
         }
+        extentTest.info("Clicked image in the Arrivals.");
 
         //8) Test whether it is navigating to next page where the user can add that book into his basket.
         ReusableMethods.clickWithJS(homePage.arrivals.get(0));
         softAssert.assertTrue(homePage.addToBasketButton.isDisplayed(), "homePage.addToBasketButton.is not Displayed !!");
+        extentTest.info("Navigate to next page.");
 
         //9) Image should be clickable and shoul navigate to next page where user can add that book to his basket
         softAssert.assertTrue(homePage.firstArrivalImage.isEnabled(), "Image not should be clickable!!");
+        extentTest.info("Image should be clickable.");
         ReusableMethods.clickWithJS(homePage.firstArrivalImage);
         softAssert.assertTrue(homePage.addToBasketButton.isSelected(), "homePage.addToBasketButton.is not Selected!!");
+        extentTest.info("Moved to cart page.");
         Driver.getDriver().navigate().refresh();
 
         //10) Now click on Reviews tab for the book you clicked on.
         ReusableMethods.clickWithJS(homePage.reviews);
         actions.doubleClick(homePage.reviews).perform();
+        extentTest.info("Now clicked on Reviews tab.");
 
         //11) There should be a description regarding that book the user clicked on
         softAssert.assertTrue(homePage.reviewsToReview.isDisplayed(), "reviews is not Displayed!!");
+        extentTest.info("reviews is displayed.");
+        extentTest.pass("Arrivals-Images-Reviews test PASS.");
         softAssert.assertAll();
+    }
 
-    }
     @AfterClass
-    public void closeDriver() {
-        Driver.getDriver().close();
-    }
+    public void closeDriver() {Driver.getDriver().close();}
 
 }
