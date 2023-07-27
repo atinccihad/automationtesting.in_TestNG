@@ -28,24 +28,24 @@ public class MyAccountRegistration_04 extends TestBaseRapor {
         ReusableMethods.clickWithJS(registrationPage.myAccountButton);
         extentTest.info("myAccountButton clicked.");
 
-        //4) Enter empty username in username textbox
+        //4) Enter valid Email Address in Email-Address textbox
         Driver.getDriver().navigate().refresh();
         ReusableMethods.clickWithJS(registrationPage.myAccountButton);
-        registrationPage.emailBox.sendKeys("", Keys.ENTER);
-        extentTest.info("Entered empty username in username textbox.");
+        registrationPage.emailBox.sendKeys(ConfigurationReader.getProperty("username"), Keys.ENTER);
+        extentTest.info("Entered username in username textbox.");
 
-        //5) Now enter valid password in the password textbox
-        registrationPage.passwordBox.sendKeys(ConfigurationReader.getProperty("password"));
-        extentTest.info("The password has been entered in the password text box.");
+        //5) Enter empty password in password textbox
+        registrationPage.passwordBox.sendKeys("");
+        extentTest.info("The empty password has been entered in the password text box.");
 
-        //6) Click on login button.
-        registrationPage.loginButton.click();
-        extentTest.info("The loginButton clicked.");
+        //6) Click on Register button
+        registrationPage.registerButton.click();
+        extentTest.info("The registerButton clicked.");
 
-        //7) Proper error must be displayed(ie Invalid username) and prompt to enter login again
+        //7) Registration must fail with a warning message(ie please enter an account password)
         assertTrue(registrationPage.errorMessage.isDisplayed(), "errorMessage -> 'Error: Username is required.' is not displayed!!");
-        extentTest.info("'Error: Username is required.' is displayed.");
-        extentTest.pass("Log-in with empty username and valid password test PASS.");
+        extentTest.info("'Error: Password is required.' is displayed.");
+        extentTest.pass("Log-in with valid username and empty password test PASS.");
     }
 
 }
