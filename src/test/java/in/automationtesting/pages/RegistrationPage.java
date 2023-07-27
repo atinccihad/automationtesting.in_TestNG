@@ -13,4 +13,5 @@ public class RegistrationPage {
     @FindBy(xpath = "//input[@class='woocommerce-Button button']") public WebElement registerButton;
     @FindBy(xpath = "(//div/p)[1]") public WebElement helloUser;
     @FindBy(xpath = "//li[*='invalidMail']") public WebElement emailWarningMessage;
+    @FindBy(xpath = "//ul[@class=\"woocommerce-error\"]") public WebElement usernameIsRequired;
 }
