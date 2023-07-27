@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 import static org.testng.Assert.assertTrue;
 
 public class MyAccountRegistration_04 extends TestBaseRapor {
-    //22. Log-in with empty username and valid password
+    //30. Registration with empty password
     RegistrationPage registrationPage = new RegistrationPage();
 
     @Test
