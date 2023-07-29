@@ -5,16 +5,18 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.List;
+
 public class ShopPage {
     public ShopPage(){ PageFactory.initElements(Driver.getDriver(),this); }
     @FindBy(id = "menu-item-40") public WebElement shopButton;
-    @FindBy(xpath = "//form/div/div/span[@style=\"left: 85.7143%;\"]") public WebElement filterPriceHedef;
-    @FindBy(xpath = "//span[@style='left: 0%;']") public WebElement filterByPriceSOL;
-    @FindBy(xpath = "//span[@style='left: 100%;']") public WebElement filterByPriceSAG;
+    @FindBy(xpath = "//*[@id=\"woocommerce_price_filter-2\"]/form/div/div[1]/div") public WebElement filterPriceHedef;
+    @FindBy(xpath = "//*[@id=\"woocommerce_price_filter-2\"]/form/div/div[1]/span[1]") public WebElement filterByPriceSOL;
+    @FindBy(xpath = "//*[@id=\"woocommerce_price_filter-2\"]/form/div/div[1]/span[2]") public WebElement filterByPriceSAG;
+    @FindBy(xpath = "/html/body/div[1]/div[2]/div/aside/div[2]/form/div/div[1]/span[2]") public WebElement filterByPriceSAG2;
     @FindBy(xpath = "//button[@type=\"submit\"]") public WebElement filterMAVI_button;
-    @FindBy(xpath = "//span[@class=\"price\"]") public WebElement priceList;
+    @FindBy(xpath = "//span[@class=\"price\"]") public List<WebElement> priceList;
     @FindBy(xpath = "//span/ins/span") public WebElement priceIndirimliList;
-    @FindBy(xpath = "(//span[@class=\"ui-slider-handle ui-corner-all ui-state-default\"])[1]") public WebElement t1;
-    @FindBy(xpath = "(//span[@class=\"ui-slider-handle ui-corner-all ui-state-default\"])[2]") public WebElement t2;
+
 
 }
