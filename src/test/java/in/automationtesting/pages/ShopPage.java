@@ -17,6 +17,10 @@ public class ShopPage {
     @FindBy(xpath = "//button[@type=\"submit\"]") public WebElement filterMAVI_button;
     @FindBy(xpath = "//span[@class=\"price\"]") public List<WebElement> priceList;
     @FindBy(xpath = "//span/ins/span") public WebElement priceIndirimliList;
+    @FindBy(xpath = "//ul[@class='product-categories']//li") public List<WebElement> productCategories;
+    @FindBy(xpath = "//a[@href=\"https://practice.automationtesting.in/product/android-quick-start-guide/\"]") public WebElement androidButton;
+    @FindBy(xpath = "//a[@href=\"https://practice.automationtesting.in/wp-content/uploads/2017/01/Android-Quick-Start-Guide.png\"]") public WebElement androidUrun;
+
 
 
 }
