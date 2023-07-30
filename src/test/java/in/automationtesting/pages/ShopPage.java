@@ -20,6 +20,9 @@ public class ShopPage {
     @FindBy(xpath = "//ul[@class='product-categories']//li") public List<WebElement> productCategories;
     @FindBy(xpath = "//a[@href=\"https://practice.automationtesting.in/product/android-quick-start-guide/\"]") public WebElement androidButton;
     @FindBy(xpath = "//a[@href=\"https://practice.automationtesting.in/wp-content/uploads/2017/01/Android-Quick-Start-Guide.png\"]") public WebElement androidUrun;
+    @FindBy(xpath = "//select[@class=\"orderby\"]") public WebElement sortingSecenekleri;
+    @FindBy(className = "woocommerce-LoopProduct-link") public List<WebElement> seleniumElementleri;
+    @FindBy(xpath = "//a[@href=\"https://practice.automationtesting.in/product/selenium-ruby/\"]") public WebElement seleniumFirstElement;
 
 
 
