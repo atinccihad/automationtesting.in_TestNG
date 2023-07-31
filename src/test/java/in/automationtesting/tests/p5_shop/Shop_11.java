@@ -7,14 +7,14 @@ import in.automationtesting.utilities.TestBaseRapor;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
-public class Shop_10 extends TestBaseRapor {
+public class Shop_11 extends TestBaseRapor {
     //41. Shop-Add to Basket-View Basket Functionality
     ShopPage shopPage = new ShopPage();
     Actions actions = new Actions(Driver.getDriver());
 
     @Test
     public void shopDefaultSortingFunctionality() {
-        extentTest = extentReports.createTest("Shop_10", "Alışveriş-Sepete Ekle-Sepete Bak İşlevselliği.");
+        extentTest = extentReports.createTest("Shop_11", "Alışveriş-Sepete Ekle-Sepete Bak İşlevselliği.");
         //1) Open the browser
         //2) Enter the URL “http://practice.automationtesting.in/”
         Driver.getDriver().get(ConfigurationReader.getProperty("base_url"));
@@ -36,7 +36,6 @@ public class Shop_10 extends TestBaseRapor {
         //11) Now user can fill his details in billing details form and can opt any payment in the payment gateway like Direct bank transfer,cheque,cash or paypal.
         //12) Now click on Place Order button to complete process
         //13) On clicking place order button user completes his process where the page navigates to Order confirmation page with order details,bank details,customer details and billing details.
-
         extentTest.pass("");
     }
 
