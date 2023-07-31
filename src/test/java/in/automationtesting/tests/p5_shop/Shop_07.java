@@ -31,6 +31,7 @@ public class Shop_07 extends TestBaseRapor {
         //4) Click on read more button in home page
         //5) Read More option indicates the Out Of Stock.
         //6) Users cannot add the product which has read more options as it was out of stock.
+
     }
 
 }
