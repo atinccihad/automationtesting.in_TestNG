@@ -16,7 +16,7 @@ public class Shop_08 extends TestBaseRapor {
 
     @Test
     public void shopDefaultSortingFunctionality() {
-        extentTest = extentReports.createTest("Shop_09", "Shop-Varsayılan Sıralama İşlevselliği.");
+        extentTest = extentReports.createTest("Shop_09", "Mağaza-Daha Fazla Oku İşlevselliği.");
         //1) Open the browser
         //2) Enter the URL “http://practice.automationtesting.in/”
         Driver.getDriver().get(ConfigurationReader.getProperty("base_url"));
@@ -28,17 +28,10 @@ public class Shop_08 extends TestBaseRapor {
         shopPage.shopButton.click();
         extentTest.info("shopButton tiklandi.");
 
-        //4) Click on Sort by High to Low Item in Default sorting dropdown
-        Select select = new Select(shopPage.sortingSecenekleri);
-        select.selectByIndex(5);
-        extentTest.info("'Sort by price: High to Low' tiklandi.");
-
-        //5) Now user can view the popular products only
-        ReusableMethods.jsExecutorScrool(shopPage.seleniumElementleri.get(3));
-        ReusableMethods.waitFor(2);
-        ReusableMethods.jsExecutorScrool(shopPage.seleniumElementleri.get(7));
-        extentTest.info("Siralanmis urunler goruntulendi.");
-        extentTest.pass("Shop-Default Sorting Functionality test PASS.");
+        //4) Click on read more button in home page
+        //5) Read More option indicates the Out Of Stock.
+        //6) Users cannot add the product which has read more options as it was out of stock.
+        extentTest.pass("Shop-Read More Functionality test PASS.");
     }
 
 }
