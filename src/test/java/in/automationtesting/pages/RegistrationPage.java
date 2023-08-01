@@ -13,7 +13,7 @@ public class RegistrationPage {
     @FindBy(xpath = "(//input[@class='woocommerce-Button button'])[1]") public WebElement loginButton;
     @FindBy(xpath = "(//input[@class='woocommerce-Button button'])[2]") public WebElement registerButton;
     @FindBy(xpath = "(//div/p)[1]") public WebElement helloUser;
-    @FindBy(xpath = "//li[*='invalidMail']") public WebElement emailWarningMessage;
+    @FindBy(xpath = " //li[text()=' Please provide a valid email address.']") public WebElement emailWarningMessage;
     @FindBy(xpath = "//ul[@class=\"woocommerce-error\"]") public WebElement usernameIsRequired;
     @FindBy(xpath = "(//ul/li)[7]") public WebElement errorMessage;
 }

@@ -29,6 +29,7 @@ public class MyAccountRegistration_02 extends TestBaseRapor {
 
         //4) Enter invalid Email Address in Email-Address textbox
         Driver.getDriver().navigate().refresh();
+        ReusableMethods.clickWithJS(registrationPage.myAccountButton);
         registrationPage.emailBox.sendKeys(ConfigurationReader.getProperty("invalidUsername"));
         extentTest.info("Enter the invalid Email Address.");
 
@@ -41,7 +42,8 @@ public class MyAccountRegistration_02 extends TestBaseRapor {
         extentTest.info("The registerButton clicked.");
 
         //7) Registration must fail with a warning message(ie You must enter a valid email address)
-        assertTrue(registrationPage.emailWarningMessage.isDisplayed(), "The password you entered for the username invalidMail is incorrect. Lost your password? mesaji goruntulenmedi!");
+        System.out.println(registrationPage.emailWarningMessage.getText());
+        assertTrue(registrationPage.emailWarningMessage.getText().contains("Error: Please provide a valid email address."), "The password you entered for the username invalidMail is incorrect. Lost your password? mesaji goruntulenmedi!");
         extentTest.info("invalidMail  assertion.");
         extentTest.pass("Registration with invalid email id test PASS.");
     }
