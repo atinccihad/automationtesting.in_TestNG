@@ -7,11 +7,14 @@ import in.automationtesting.utilities.ReusableMethods;
 import in.automationtesting.utilities.TestBaseRapor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
+import static org.testng.AssertJUnit.assertTrue;
 
 public class Shop_01 extends TestBaseRapor {
     //32. Shop-Filter By Price Functionality
@@ -25,32 +28,25 @@ public class Shop_01 extends TestBaseRapor {
         //2) Enter the URL “http://practice.automationtesting.in/”
         Driver.getDriver().get(ConfigurationReader.getProperty("base_url"));
         extentTest.info("Get the url -> http://practice.automationtesting.in/");
+
         //3) Click on Shop Menu
         shopPage.shopButton.click();
         Driver.getDriver().navigate().refresh();
+        shopPage.shopButton.click();
+        extentTest.info("Clicked the Shop Menu button.");
 
         //4) Adjust the filter by price between 150 to 450 rps
-        shopPage.shopButton.click();
-        actions.sendKeys(Keys.PAGE_UP).perform();
-        //ReusableMethods.waitFor(3);
-        actions.dragAndDrop(shopPage.filterByPriceSAG2, shopPage.filterPriceHedef).perform();
+        shopPage.adjustPriceBySlider(150, 450);
+        ReusableMethods.waitFor(3);
+        extentTest.info("The filtered by price between 150 to 450 rps.");
 
         //5) Now click on Filter button
         ReusableMethods.clickWithJS(shopPage.filterMAVI_button);
+        extentTest.info("The Filter button is clicked.");
 
         //6) User can view books only between 150 to 450 rps price
-        Integer min = 150;
-        Integer max = 450;
-
-        List<String> fiyatlar = new ArrayList<>();
-
-        for (int i = 0; i < shopPage.priceList.size(); i++) {
-            fiyatlar.add(shopPage.priceList.get(i).getText().replace("₹","").replace(".00",""));
-        }
-        System.out.println("fiyatlar = " + fiyatlar);
-
-
-
-
+        assertTrue(Driver.getDriver().getCurrentUrl().contains("min_price=150&max_price=450"));
+        extentTest.info("User viewed the books, only between 150 to 450 rps price.");
+        extentTest.pass("Shop-Filter By Price Functionality test PASS.");
     }
 }
