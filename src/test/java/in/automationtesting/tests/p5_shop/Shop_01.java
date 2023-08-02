@@ -5,14 +5,8 @@ import in.automationtesting.utilities.ConfigurationReader;
 import in.automationtesting.utilities.Driver;
 import in.automationtesting.utilities.ReusableMethods;
 import in.automationtesting.utilities.TestBaseRapor;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
-import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 import static org.testng.AssertJUnit.assertTrue;
 
@@ -49,4 +43,5 @@ public class Shop_01 extends TestBaseRapor {
         extentTest.info("User viewed the books, only between 150 to 450 rps price.");
         extentTest.pass("Shop-Filter By Price Functionality test PASS.");
     }
+
 }
