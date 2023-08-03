@@ -138,7 +138,7 @@ HOME PAGE
 15) User can able to apply coupon by entering ‘krishnasakinala’ in the coupon textbox which give 50rps off on the total price
     
 ------------------------------------------------------
-10.Home-Arrivals-Add to Basket-Items-Coupon value<450
+10. Home-Arrivals-Add to Basket-Items-Coupon value<450
 ------------------------------------------------------
 1) Open the browser
 2) Enter the URL “http://practice.automationtesting.in/”
