@@ -1,4 +1,4 @@
-Site to be tested: automationtesting
+Site to be tested:  http://practice.automationtesting.in/
 
 
 HOME PAGE
