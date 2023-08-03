@@ -1,11 +1,10 @@
 Site to be tested:  http://practice.automationtesting.in/
 
-
-HOME PAGE
+<h2>HOME PAGE</h2>
 
 -------------------------------------
-1. Home Page with three Sliders only
--------------------------------------
+<h4>1. Home Page with three Sliders only</h4>
+
 1) Open the browser
 2) Enter the URL “http://practice.automationtesting.in/”
 3) Click on Shop Menu
@@ -14,8 +13,8 @@ HOME PAGE
 6) The Home page must contains only three sliders
    
 --------------------------------------
-2. Home page with three Arrivals only
---------------------------------------
+<h4>2. Home page with three Arrivals only</h4>
+
 1) Open the browser
 2) Enter the URL “http://practice.automationtesting.in/”
 3) Click on Shop Menu
@@ -24,8 +23,8 @@ HOME PAGE
 6) The Home page must contains only three Arrivals
    
 -------------------------------------------------
-3. Home page - Images in Arrivals should navigate
--------------------------------------------------
+<h4>3. Home page - Images in Arrivals should navigate</h4>
+
 1) Open the browser
 2) Enter the URL “http://practice.automationtesting.in/”
 3) Click on Shop Menu
@@ -37,8 +36,8 @@ HOME PAGE
 9) Image should be clickable and shoul navigate to next page where user can add that book to his basket
     
 -------------------------------------------
-4. Home page - Arrivals-Images-Description
--------------------------------------------
+<h4>4. Home page - Arrivals-Images-Description</h4>
+
 1) Open the browser
 2) Enter the URL “http://practice.automationtesting.in/”
 3) Click on Shop Menu
@@ -52,8 +51,8 @@ HOME PAGE
 11) There should be a description regarding that book the user clicked on
     
 ---------------------------------------
-5. Home page - Arrivals-Images-Reviews
----------------------------------------
+<h4>5. Home page - Arrivals-Images-Reviews</h4>
+
 1) Open the browser
 2) Enter the URL “http://practice.automationtesting.in/”
 3) Click on Shop Menu
@@ -67,8 +66,8 @@ HOME PAGE
 11) There should be a Reviews regarding that book the user clicked on
     
 ---------------------------------------------
-6. Home page - Arrivals-Images-Add to Basket
----------------------------------------------
+<h4>6. Home page - Arrivals-Images-Add to Basket</h4>
+
 1) Open the browser
 2) Enter the URL “http://practice.automationtesting.in/”
 3) Click on Shop Menu
@@ -83,8 +82,8 @@ HOME PAGE
 12) User can add a book by clicking on Add To Basket button which adds that book in to his Basket
     
 ------------------------------------------------------
-7. Home page - Arrivals-Add to Basket with more books
-------------------------------------------------------
+<h4>7. Home page - Arrivals-Add to Basket with more books</h4>
+
 1) Open the browser
 2) Enter the URL “http://practice.automationtesting.in/”
 3) Click on Shop Menu
@@ -102,8 +101,8 @@ HOME PAGE
 15) Now it throws an error prompt like you must enter a value between 1 and 20
    
 --------------------------------------
-8. Home-Arrivals-Add to Basket-Items
---------------------------------------
+<h4>8. Home-Arrivals-Add to Basket-Items</h4>
+
 1) Open the browser
 2) Enter the URL “http://practice.automationtesting.in/”
 3) Click on Shop Menu
@@ -119,8 +118,8 @@ HOME PAGE
 13) User can click on the Item link in menu item after adding the book in to the basket which leads to the check out page
     
 --------------------------------------------
-9. Home-Arrivals-Add to Basket-Items-Coupon
---------------------------------------------
+<h4>9. Home-Arrivals-Add to Basket-Items-Coupon</h4>
+
 1) Open the browser
 2) Enter the URL “http://practice.automationtesting.in/”
 3) Click on Shop Menu
@@ -138,8 +137,8 @@ HOME PAGE
 15) User can able to apply coupon by entering ‘krishnasakinala’ in the coupon textbox which give 50rps off on the total price
     
 ------------------------------------------------------
-10. Home-Arrivals-Add to Basket-Items-Coupon value<450
-------------------------------------------------------
+<h4>10. Home-Arrivals-Add to Basket-Items-Coupon value<450</h4>
+
 1) Open the browser
 2) Enter the URL “http://practice.automationtesting.in/”
 3) Click on Shop Menu
@@ -158,8 +157,8 @@ HOME PAGE
 because the coupon is applicable for the book price > 450 rps
 
 --------------------------------------------------
-11. Home-Arrivals-Add to Basket-Items-Remove book
---------------------------------------------------
+<h4>11. Home-Arrivals-Add to Basket-Items-Remove book</h4>
+
 1) Open the browser
 2) Enter the URL “http://practice.automationtesting.in/”
 3) Click on Shop Menu
@@ -176,8 +175,8 @@ because the coupon is applicable for the book price > 450 rps
 14) User has the feasibility to remove the book at the time of check out also
     
 -----------------------------------------------
-12. Home-Arrivals-Add to Basket-Items-Add book
------------------------------------------------   
+<h4>12. Home-Arrivals-Add to Basket-Items-Add book</h4>
+   
 1) Open the browser
 2) Enter the URL “http://practice.automationtesting.in/”
 3) Click on Shop Menu
@@ -196,8 +195,8 @@ because the coupon is applicable for the book price > 450 rps
 16) User has the feasibility to Update Basket at the time of check out.
 
 -----------------------------------------------------------------
-13. Home-Arrivals-Add to Basket-Items-Check-out-Book Final price
------------------------------------------------------------------
+<h4>13. Home-Arrivals-Add to Basket-Items-Check-out-Book Final price</h4>
+
 1) Open the browser
 2) Enter the URL “http://practice.automationtesting.in/”
 3) Click on Shop Menu
@@ -214,8 +213,8 @@ because the coupon is applicable for the book price > 450 rps
 14) User has the feasibility to find the total price of the books at to find the total price of the books at the time of check out
 
 --------------------------------------------------------------
-14. Home-Arrivals-Add to Basket-Items-Check-out-Update Basket
---------------------------------------------------------------
+<h4>14. Home-Arrivals-Add to Basket-Items-Check-out-Update Basket</h4>
+
 1) Open the browser
 2) Enter the URL “http://practice.automationtesting.in/”
 3) Click on Shop Menu
@@ -234,8 +233,8 @@ because the coupon is applicable for the book price > 450 rps
 16) User has the feasibility to Update Basket at the time of check out
     
 ----------------------------------------------------------------------------
-15. Home-Arrivals-Add to Basket-Items-Check-out-Total & Sub-total condition
-----------------------------------------------------------------------------
+<h4>15. Home-Arrivals-Add to Basket-Items-Check-out-Total & Sub-total condition</h4>
+
 1) Open the browser
 2) Enter the URL “http://practice.automationtesting.in/”
 3) Click on Shop Menu
@@ -253,8 +252,8 @@ because the coupon is applicable for the book price > 450 rps
 15) Total
 
 --------------------------------------------------------------
-16. Home-Arrivals-Add to Basket-Items-Check-out functionality
---------------------------------------------------------------
+<h4>16. Home-Arrivals-Add to Basket-Items-Check-out functionality</h4>
+
 1) Open the browser
 2) Enter the URL “http://practice.automationtesting.in/”
 3) Click on Shop Menu
@@ -274,8 +273,8 @@ because the coupon is applicable for the book price > 450 rps
 17)Clicking on Proceed to Checkout button leads to payment gateway page
 
 ----------------------------------------------------------------
-17. Home-Arrivals-Add to Basket-Items-Check-out-Payment Gateway
-----------------------------------------------------------------
+<h4>17. Home-Arrivals-Add to Basket-Items-Check-out-Payment Gateway</h4>
+
 1) Open the browser
 2) Enter the URL “http://practice.automationtesting.in/”
 3) Click on Shop Menu
@@ -296,8 +295,8 @@ because the coupon is applicable for the book price > 450 rps
 18)User has the feasibility to add coupon in the payment gateway page and also he can find billing,order and additional details.
 
 ----------------------------------------------------------------------------
-18. Home-Arrivals-Add to Basket-Items-Check-out-Payment Gateway-Place order
-----------------------------------------------------------------------------
+<h4>18. Home-Arrivals-Add to Basket-Items-Check-out-Payment Gateway-Place order</h4>
+
 1) Open the browser
 2) Enter the URL “http://practice.automationtesting.in/”
 3) Click on Shop Menu
@@ -311,7 +310,7 @@ because the coupon is applicable for the book price > 450 rps
 11) User can view that Book in the Menu item with price.
 12) Now click on Item link which navigates to proceed to check out page.
 13) Now user can find total and subtotal values just above the Proceed to Checkout button.
-14) The total always < subtotal because taxes are added in the subtotal
+14) The total always < subtotal because taxes are added in the subtotal>
 15) Now click on Proceed to Check out button which navigates to payment gateway page.
 16) User can view Billing Details,Order Details,Additional details and Payment gateway details.
 17) Now user can fill his details in billing details form and can opt any payment in the payment gateway like Direct bank transfer,cheque,cash or paypal.
@@ -319,12 +318,11 @@ because the coupon is applicable for the book price > 450 rps
 19) On clicking place-order button user completes the process where the page navigates to Order confirmation page
 with order details,bank details,customer details and billing details.
 
-
-MY ACCOUNT - LOGIN
+<h2>MY ACCOUNT - LOGIN</h2>
 
 ---------------------------------------------
-19. Log-in with valid username and password
----------------------------------------------
+<h4>19. Log-in with valid username and password</h4>
+
 1) Open the browser
 2) Enter the URL “http://practice.automationtesting.in/”
 3) Click on My Account Menu
@@ -334,8 +332,8 @@ MY ACCOUNT - LOGIN
 7) User must successfully login to the web page
 
 ---------------------------------------------------------
-20. Log-in with incorrect username and incorrect password
----------------------------------------------------------
+<h4>20. Log-in with incorrect username and incorrect password</h4>
+
 1) Open the browser
 2) Enter the URL “http://practice.automationtesting.in/”
 3) Click on My Account Menu
@@ -345,8 +343,8 @@ MY ACCOUNT - LOGIN
 7) Proper error must be displayed(ie Invalid username) and prompt to enter login again
 
 ---------------------------------------------------
-21. Log-in with correct username and empty password
----------------------------------------------------
+<h4>21. Log-in with correct username and empty password</h4>
+
 1) Open the browser
 2) Enter the URL “http://practice.automationtesting.in/”
 3) Click on My Account Menu
@@ -356,8 +354,8 @@ MY ACCOUNT - LOGIN
 7) Proper error must be displayed(ie Invalid password) and prompt to enter login again
 
 -------------------------------------------------
-22. Log-in with empty username and valid password
--------------------------------------------------
+<h4>22. Log-in with empty username and valid password</h4>
+
 1) Open the browser
 2) Enter the URL “http://practice.automationtesting.in/”
 3) Click on My Account Menu
@@ -367,8 +365,8 @@ MY ACCOUNT - LOGIN
 7) Proper error must be displayed(ie Invalid username) and prompt to enter login again
 
 -------------------------------------------------
-23. Log-in with empty username and empty password
--------------------------------------------------
+<h4>23. Log-in with empty username and empty password</h4>
+
 1) Open the browser
 2) Enter the URL “http://practice.automationtesting.in/”
 3) Click on My Account Menu
@@ -378,8 +376,8 @@ MY ACCOUNT - LOGIN
 7) Proper error must be displayed(ie required username) and prompt to enter login again
 
 -------------------------------------
-24. Log-in -Password should be masked
--------------------------------------
+<h4>24. Log-in -Password should be masked</h4>
+
 1) Open the browser
 2) Enter the URL “http://practice.automationtesting.in/”
 3) Click on My Account Menu
@@ -387,8 +385,8 @@ MY ACCOUNT - LOGIN
 5) The password field should display the characters in asterisks or bullets such that the password is not visible on the screen
 
 --------------------------------
-25. Login-Handles case sensitive
---------------------------------
+<h4>25. Login-Handles case sensitive</h4>
+
 1) Open the browser
 2) Enter the URL “http://practice.automationtesting.in/”
 3) Click on My Account Menu
@@ -398,8 +396,8 @@ MY ACCOUNT - LOGIN
 7) Login must fail saying incorrect username/password.
 
 ------------------------
-26. Login-Authentication
-------------------------
+<h4>26. Login-Authentication</h4>
+
 1) Open the browser
 2) Enter the URL “http://practice.automationtesting.in/”
 3) Click on My Account Menu
@@ -410,12 +408,11 @@ MY ACCOUNT - LOGIN
 8) Now press back button
 9) User shouldn’t be signed in to his account rather a general webpage must be visible
 
-
-MY ACCOUNT - REGISTRATION
+<h2>MY ACCOUNT - REGISTRATION</h2>
 
 ------------------------
-27. Registration-Sign-in
-------------------------
+<h4>27. Registration-Sign-in</h4>
+
 1) Open the browser
 2) Enter the URL “http://practice.automationtesting.in/”
 3) Click on My Account Menu
@@ -425,8 +422,8 @@ MY ACCOUNT - REGISTRATION
 7) User will be registered successfully and will be navigated to the Home page
 
 --------------------------------------
-28. Registration with invalid Email-id
---------------------------------------
+<h4>28. Registration with invalid Email-id</h4>
+
 1) Open the browser
 2) Enter the URL “http://practice.automationtesting.in/”
 3) Click on My Account Menu
@@ -436,8 +433,8 @@ MY ACCOUNT - REGISTRATION
 7) Registration must fail with a warning message(ie You must enter a valid email address)
 
 ------------------------------------
-29. Registration with empty Email-id
-------------------------------------
+<h4>29. Registration with empty Email-id</h4>
+
 1) Open the browser
 2) Enter the URL “http://practice.automationtesting.in/”
 3) Click on My Account Menu
@@ -447,8 +444,8 @@ MY ACCOUNT - REGISTRATION
 7) Registration must fail with a warning message(ie please provide valid email address)
 
 ------------------------------------
-30. Registration with empty password
-------------------------------------
+<h4>30. Registration with empty password</h4>
+
 1) Open the browser
 2) Enter the URL “http://practice.automationtesting.in/”
 3) Click on My Account Menu
@@ -458,8 +455,8 @@ MY ACCOUNT - REGISTRATION
 7) Registration must fail with a warning message(ie please enter an account password)
 
 -----------------------------------------------
-31. Registration with empty Email-id & password
------------------------------------------------
+<h4>31. Registration with empty Email-id & password</h4>
+
 1) Open the browser
 2) Enter the URL “http://practice.automationtesting.in/”
 3) Click on My Account Menu
@@ -468,12 +465,11 @@ MY ACCOUNT - REGISTRATION
 6) Click on Register button
 7) Registration must fail with a warning message(ie please provide valid email address)
 
-
-SHOP
+<h2>SHOP</h2>
 
 --------------------------------------
-32. Shop-Filter By Price Functionality
---------------------------------------
+<h4>32. Shop-Filter By Price Functionality</h4>
+
 1) Open the browser
 2) Enter the URL “http://practice.automationtesting.in/”
 3) Click on Shop Menu
@@ -482,8 +478,8 @@ SHOP
 6) User can view books only between 150 to 450 rps price
 
 -----------------------------------------
-33. Shop-Product Categories Functionality
------------------------------------------
+<h4>33. Shop-Product Categories Functionality</h4>
+
 1) Open the browser
 2) Enter the URL “http://practice.automationtesting.in/”
 3) Click on Shop Menu
@@ -491,8 +487,8 @@ SHOP
 5) Now user can view only that particular product
 
 --------------------------------------
-34. Shop-Default Sorting Functionality
---------------------------------------      
+<h4>34. Shop-Default Sorting Functionality</h4>
+
 1) Open the browser
 2) Enter the URL “http://practice.automationtesting.in/”
 3) Click on Shop Menu
@@ -500,8 +496,8 @@ SHOP
 5) Now user can view the popular products only
 
 --------------------------------------
-35. Shop-Default Sorting Functionality
---------------------------------------
+<h4>35. Shop-Default Sorting Functionality</h4>
+
 1) Open the browser
 2) Enter the URL “http://practice.automationtesting.in/”
 3) Click on Shop Menu
@@ -509,8 +505,8 @@ SHOP
 5) Now user can view the popular products only
 
 --------------------------------------
-36. Shop-Default Sorting Functionality
---------------------------------------
+<h4>36. Shop-Default Sorting Functionality</h4>
+
 1) Open the browser
 2) Enter the URL “http://practice.automationtesting.in/”
 3) Click on Shop Menu
@@ -518,8 +514,8 @@ SHOP
 5) Now user can view the popular products only
 
 --------------------------------------
-37. Shop-Default Sorting Functionality
---------------------------------------
+<h4>37. Shop-Default Sorting Functionality</h4>
+
 1) Open the browser
 2) Enter the URL “http://practice.automationtesting.in/”
 3) Click on Shop Menu
@@ -527,8 +523,8 @@ SHOP
 5) Now user can view the popular products only
 
 --------------------------------------
-38. Shop-Default Sorting Functionality
---------------------------------------
+<h4>38. Shop-Default Sorting Functionality</h4>
+
 1) Open the browser
 2) Enter the URL “http://practice.automationtesting.in/”
 3) Click on Shop Menu
@@ -536,8 +532,8 @@ SHOP
 5) Now user can view the popular products only
 
 --------------------------------
-39. Shop-Read More Functionality
---------------------------------
+<h4>39. Shop-Read More Functionality</h4>
+
 1) Open the browser
 2) Enter the URL “http://practice.automationtesting.in/”
 3) Click on Shop Menu
@@ -546,8 +542,8 @@ SHOP
 6) Users cannot add the product which has read more options as it was out of stock.
 
 ---------------------------
-40. Shop-Sale Functionality
----------------------------
+<h4>40. Shop-Sale Functionality</h4>
+
 1) Open the browser
 2) Enter the URL “http://practice.automationtesting.in/”
 3) Click on Shop Menu
@@ -555,8 +551,8 @@ SHOP
 5) User can clearly view the actual price with old price stricken for the sale written products
 
 ------------------------------------------------
-41. Shop-Add to Basket-View Basket Functionality
-------------------------------------------------
+<h4>41. Shop-Add to Basket-View Basket Functionality</h4>
+
 1) Open the browser
 2) Enter the URL “http://practice.automationtesting.in/”
 3) Click on Shop Menu
@@ -572,8 +568,8 @@ SHOP
 13) On clicking place order button user completes his process where the page navigates to Order confirmation page with order details,bank details,customer details and billing details.
 
 ----------------------------------------------------
-42. Shop-Add to Basket-View Basket through Item link
-----------------------------------------------------
+<h4>42. Shop-Add to Basket-View Basket through Item link</h4> 
+
 1) Open the browser
 2) Enter the URL “http://practice.automationtesting.in/”
 3) Click on Shop Menu
@@ -590,8 +586,8 @@ SHOP
 with order details,bank details,customer details and billing details
 
 ----------------------------------------------------
-43. Shop-Add to Basket-View Basket-Tax Functionality
-----------------------------------------------------
+<h4>43. Shop-Add to Basket-View Basket-Tax Functionality</h4>
+
 1) Open the browser
 2) Enter the URL “http://practice.automationtesting.in/”
 3) Click on Shop Menu
@@ -603,12 +599,11 @@ with order details,bank details,customer details and billing details
 9) The tax rate variers for India compared to other countries
 10) Tax rate for indian should be 2% and for abroad it should be 5%
 
-
-MY ACCOUNT
+<h2>MY ACCOUNT</h2>
 
 ---------------------------
-44. My Accounts - Dashboard
----------------------------
+<h4>44. My Accounts - Dashboard</h4>
+
 1) Open the browser
 2) Enter the URL “http://practice.automationtesting.in/”
 3) Click on My Account Menu
@@ -620,8 +615,8 @@ MY ACCOUNT
 9) User must view Dashboard of the site
 
 ------------------------
-45. My Accounts - Orders
-------------------------
+<h4>45. My Accounts - Orders</h4>
+
 1) Open the browser
 2) Enter the URL “http://practice.automationtesting.in/”
 3) Click on My Account Menu
@@ -634,8 +629,8 @@ MY ACCOUNT
 10) User must view their orders on clicking orders link
 
 ------------------------
-46. My Accounts - Orders
-------------------------
+<h4>46. My Accounts - Orders</h4> 
+
 1) Open the browser
 2) Enter the URL “http://practice.automationtesting.in/”
 3) Click on My Account Menu
@@ -649,8 +644,8 @@ MY ACCOUNT
 11) User must view his Order details,customer details and billing details on clicking view button
 
 -------------------------
-47.  My Accounts - Orders
--------------------------
+<h4>47.  My Accounts - Orders</h4>
+
 1) Open the browser
 2) Enter the URL “http://practice.automationtesting.in/”
 3) Click on My Account Menu
@@ -664,8 +659,8 @@ MY ACCOUNT
 11) User must view Order Number Ordered date and Status of the order on clicking view button
 
 -------------------------------------
-48. My Accounts-Address Functionality
--------------------------------------
+<h4>48. My Accounts-Address Functionality</h4>
+
 1) Open the browser
 2) Enter the URL “http://practice.automationtesting.in/”
 3) Click on My Account Menu
@@ -678,8 +673,8 @@ MY ACCOUNT
 10) User must view billing address and ship address
 
 -------------------------------------
-49. My Accounts-Address Functionality
--------------------------------------
+<h4>49. My Accounts-Address Functionality</h4>
+
 1) Open the browser
 2) Enter the URL “http://practice.automationtesting.in/”
 3) Click on My Account Menu
@@ -693,8 +688,8 @@ MY ACCOUNT
 11) User can Edit Shipping address
 
 -------------------------------
-50. My Accounts-Account Details
--------------------------------
+<h4>50. My Accounts-Account Details</h4>
+
 1) Open the browser
 2) Enter the URL “http://practice.automationtesting.in/”
 3) Click on My Account Menu
@@ -707,8 +702,8 @@ MY ACCOUNT
 10) User can view account details where he can change his password also.
 
 -----------------------
-51. My Accounts-Log-Out
------------------------
+<h4>51. My Accounts-Log-Out</h4>
+
 1) Open the browser
 2) Enter the URL “http://practice.automationtesting.in/”
 3) Click on My Account Menu
