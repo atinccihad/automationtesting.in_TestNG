@@ -30,12 +30,10 @@ public class ShopPage {
     public WebElement leftSliderHandleIcon;
     @FindBy(css = "span.to") public WebElement priceRangeTo;
     @FindBy(css = "span.from") public WebElement priceRangeFrom;
-    @FindBy(xpath = "//span[@tabindex='0']") public WebElement rightSliderHandleIcon;
     public void adjustPriceBySlider(int startPrice, int endPrice) {
         Actions move = new Actions(Driver.getDriver());
         move.click(leftSliderHandleIcon).build().perform();
         ReusableMethods.wait(2);
-
         int i = 0;
         while (i >= 0) {
             if (priceRangeTo.getText().contains(String.valueOf(endPrice)) && priceRangeFrom.getText().contains(String.valueOf(startPrice))) {
@@ -46,6 +44,5 @@ public class ShopPage {
             i++;
         }
     }
-
 
 }
