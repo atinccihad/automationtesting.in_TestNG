@@ -16,4 +16,5 @@ public class RegistrationPage {
     @FindBy(xpath = " //li[text()=' Please provide a valid email address.']") public WebElement emailWarningMessage;
     @FindBy(xpath = "//ul[@class=\"woocommerce-error\"]") public WebElement usernameIsRequired;
     @FindBy(xpath = "(//ul/li)[7]") public WebElement errorMessage;
+
 }
