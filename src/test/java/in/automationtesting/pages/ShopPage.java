@@ -44,5 +44,27 @@ public class ShopPage {
             i++;
         }
     }
+    @FindBy(xpath = "//*[@id=\"content\"]/ul/li[2]/a[2]") public WebElement ikinciElementAddToBasketButton;
+    @FindBy(xpath = "//a[@class=\"wpmenucart-contents\"]") public WebElement sepetIconVeSepetTutari;
+    @FindBy(xpath = "(//a/span)[2]") public WebElement itemMiktariSagUst;
+    @FindBy(xpath = "(//a/span)[3]") public WebElement itemTutariSagUst;
+    @FindBy(xpath = "(//tr/td)[2]") public WebElement urunIcon;
+    @FindBy(xpath = "(//tr/td)[3]") public WebElement urunIsim;
+    @FindBy(xpath = "(//tr/td)[4]") public WebElement urunPrice;
+    @FindBy(xpath = "(//tr/td)[5]") public WebElement urunQuantity;
+    @FindBy(xpath = "(//tr/td)[6]") public WebElement urunTotal;
+    @FindBy(xpath = "//*[@id=\"page-34\"]/div/div[1]/div/div/table/tbody/tr[1]/td/span") public WebElement subtotalMiktari;
+    @FindBy(xpath = "(//span[@class='woocommerce-Price-amount amount'])[4]") public WebElement taxMiktari;
+    @FindBy(xpath = "(//span[@class='woocommerce-Price-amount amount'])[5]") public WebElement totalMiktari;
+    @FindBy(xpath = "//a[@href=\"https://practice.automationtesting.in/checkout/\"]") public WebElement proceedToCheckoutButton;
+    @FindBy(xpath = "(//ul[@class=\"wc_payment_methods payment_methods methods\"] /li)[1]") public WebElement directBankTransfer;
+    @FindBy(xpath = "(//ul[@class=\"wc_payment_methods payment_methods methods\"] /li)[2]") public WebElement checkPayments;
+    @FindBy(xpath = "(//ul[@class=\"wc_payment_methods payment_methods methods\"] /li)[3]") public WebElement cashOnDelivery;
+    @FindBy(xpath = "(//ul[@class=\"wc_payment_methods payment_methods methods\"] /li)[4]") public WebElement paypalExpressCheckout;
+    @FindBy(xpath = "//input[@id='place_order']") public WebElement checkoutPagePlaceholderButton;
+    @FindBy(xpath = "//span[@id='select2-chosen-2']") public WebElement statecountryKapali;
+    @FindBy(xpath = "//input[@id=\"billing_postcode\"]") public WebElement postcodeZIP;
+    @FindBy(xpath = "/html/body/div[1]/div[2]/div/div/div/div/div[1]/p[1]") public WebElement thanksMessage;
+
 
 }
