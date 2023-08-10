@@ -78,10 +78,11 @@ public class Shop_12 extends TestBaseRapor {
         extentTest.info("vergi orani farkliligi dogrulandi.");
 
         //10) Tax rate for indian should be 2% and for abroad it should be 5%
-        shopPage.billingCountryDropdown.click();
+        ReusableMethods.waitAndClickElement(shopPage.billingCountryDropdown, 3);
         extentTest.info("billingCountryDropdown clicked.");
+        ReusableMethods.jsExecutorScrool(shopPage.billingCountryInputBox);
         shopPage.billingCountryInputBox.sendKeys("Turkey");
-        extentTest.info("billingCountryInputBox clicked.");
+        extentTest.info("billingCountryInputBox send the keys.");
         shopPage.billingCountryInputBox.sendKeys(Keys.ENTER);
         extentTest.info("billingCountryInputBox clicked.");
 
