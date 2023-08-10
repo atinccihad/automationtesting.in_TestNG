@@ -158,6 +158,7 @@ public class Shop_11 extends TestBaseRapor {
         extentTest.info("ourBankDetails isDisplayed.");
         softAssert.assertAll();
         extentTest.pass("Alışveriş-Sepete Ekle-Sepete Bak İşlevselliği testi PASS.");
+
     }
 
 }
