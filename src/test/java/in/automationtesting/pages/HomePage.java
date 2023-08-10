@@ -19,12 +19,14 @@ public class HomePage {
     @FindBy(className = "woocommerce-message") public WebElement hasBeenAddedToYourBasket;
     @FindBy(xpath = "//a[@class='woocommerce-main-image zoom']") public WebElement firstArrivalImage;
     @FindBy(xpath = "//button[@class='single_add_to_cart_button button alt']") public WebElement addToBasketButton;
+    @FindBy(xpath = "(//a[text()='Add to basket'])[2]") public WebElement ikinciAddToBasketButton;
+    @FindBy(xpath = "//a[@class=\"added_to_cart wc-forward\"]") public WebElement viewBasket;
     @FindBy(xpath = "//div[@id='tab-description']") public WebElement description;
     @FindBy(xpath = "//li[@class='reviews_tab']")  public WebElement reviews;
     @FindBy(xpath = "//h2[@class='woocommerce-Reviews-title']") public WebElement reviewsToReview;
     @FindBy(xpath = "//a[@class=\"button wc-forward\"]")  public WebElement viewBasketButton;
     @FindBy(xpath = "//div[@class=\"cart_totals \"]")  public WebElement basketTotals;
-    @FindBy(xpath = "//a[@class='checkout-button button alt wc-forward']") public WebElement proceedToCheckoutButton;
+    @FindBy(xpath = "//*[@id=\"page-34\"]/div/div[1]/div[2]/div/div/a") public WebElement proceedToCheckoutButton;
     @FindBy(xpath = "//input[@class='input-text qty text']") public WebElement quantityBox;
     @FindBy(xpath = "//div[@class=\"images\"]") public WebElement bookImage;
     @FindBy(xpath = "//span[@class=\"woocommerce-Price-amount amount\"]") public WebElement price;
@@ -43,7 +45,7 @@ public class HomePage {
     @FindBy(xpath = "//div[@class='woocommerce-message']") public WebElement bookRemovedText;
     @FindBy(xpath = "//li[@class='wpmenucartli wpmenucart-display-standard menu-item']") public WebElement sepetItemFiyatSagUst;
     @FindBy(xpath = "//td[@class='product-quantity']") public WebElement auantityBox;
-    @FindBy(xpath = "(//input[@class='button'])[2]") public WebElement updateBasketButton;
+    @FindBy(xpath = "(//input[@type=\"submit\"])[2]") public WebElement updateBasketButton;
     @FindBy(xpath = "//strong[@class=\"product-quantity\"]") public WebElement yourOrderUrunMiktarElementi;
     @FindBy(xpath = "(//span[@class=\"woocommerce-Price-amount amount\"])[4]") public WebElement total;
     @FindBy(xpath = "(//span[@class=\"woocommerce-Price-amount amount\"])[2]") public WebElement subtotal;
