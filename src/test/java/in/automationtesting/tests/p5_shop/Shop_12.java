@@ -85,7 +85,6 @@ public class Shop_12 extends TestBaseRapor {
         extentTest.info("billingCountryInputBox send the keys.");
         shopPage.billingCountryInputBox.sendKeys(Keys.ENTER);
         extentTest.info("billingCountryInputBox clicked.");
-
         ReusableMethods.wait(10);
         double taxForotherCountries = Double.parseDouble(shopPage.taxForOtherCountries.getText().substring(1));
         assertEquals((totalAtLastPage * 5) / 100, taxForotherCountries);
