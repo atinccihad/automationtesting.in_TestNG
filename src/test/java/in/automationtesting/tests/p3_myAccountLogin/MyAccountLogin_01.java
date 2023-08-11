@@ -33,6 +33,7 @@ public class MyAccountLogin_01 extends TestBaseRapor {
         //7) User must successfully login to the web page
         assert homePage.welcomeText.isDisplayed();
         extentTest.info("welcomeText.isDisplayed.");
+
         extentTest.pass("PASS");
     }
 
