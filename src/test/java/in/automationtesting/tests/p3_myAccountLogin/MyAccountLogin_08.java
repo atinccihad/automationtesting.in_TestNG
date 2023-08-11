@@ -57,6 +57,7 @@ public class MyAccountLogin_08 extends TestBaseRapor {
         //9) User shouldn’t be signed in to his account rather a general webpage must be visible
         Assert.assertEquals(Driver.getDriver().getCurrentUrl(), ConfigurationReader.getProperty("myaccountUrl"), "Beklenmedik sekilde oturum acildi!!");
         Driver.getDriver().navigate().refresh();
+
         extentTest.pass("PASS");
     }
 
