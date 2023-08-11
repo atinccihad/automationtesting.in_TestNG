@@ -49,6 +49,7 @@ public class MyAccountLogin_03 extends TestBaseRapor {
         assert homePage.wrongText.isDisplayed();
         extentTest.info("wrongText goruntulendi.");
         Driver.getDriver().navigate().refresh();
+
         extentTest.pass("PASS");
     }
 
