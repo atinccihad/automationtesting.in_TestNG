@@ -45,6 +45,7 @@ public class MyAccountRegistration_04 extends TestBaseRapor {
         //7) Registration must fail with a warning message(ie please enter an account password)
         assertTrue(registrationPage.errorMessage.isDisplayed(), "errorMessage -> 'Error: Username is required.' is not displayed!!");
         extentTest.info("'Error: Password is required.' is displayed.");
+
         extentTest.pass("Log-in with valid username and empty password test PASS.");
     }
 
