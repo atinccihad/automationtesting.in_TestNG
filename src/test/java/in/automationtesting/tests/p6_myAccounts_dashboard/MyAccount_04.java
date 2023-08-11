@@ -52,7 +52,6 @@ public class MyAccount_04 extends TestBaseRapor {
         extentTest.info("Orders clicked.");
 
         //10) Click view button
-        //ReusableMethods.clickWithJS(homePage.viewsList.get(5));
         homePage.firstViewButton.click();
         extentTest.info("Ilk view buttona tiklandi.");
 
