@@ -1,4 +1,4 @@
-package in.automationtesting.tests.p4_myAccount;
+package in.automationtesting.tests.p4_myAccount_registration;
 
 import in.automationtesting.pages.RegistrationPage;
 import in.automationtesting.utilities.ConfigurationReader;

@@ -7,12 +7,11 @@ import in.automationtesting.utilities.ReusableMethods;
 import in.automationtesting.utilities.TestBaseRapor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-public class HomeArrivals_9 extends TestBaseRapor {
+public class HomeArrivals_09 extends TestBaseRapor {
     //16. Home-Arrivals-Add to Basket-Items-Check-out functionality
     HomePage homePage = new HomePage();
     Actions actions = new Actions(Driver.getDriver());

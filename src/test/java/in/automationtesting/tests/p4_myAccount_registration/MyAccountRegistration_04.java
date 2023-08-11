@@ -1,4 +1,4 @@
-package in.automationtesting.tests.p4_myAccount;
+package in.automationtesting.tests.p4_myAccount_registration;
 
 import in.automationtesting.pages.RegistrationPage;
 import in.automationtesting.utilities.ConfigurationReader;
@@ -10,13 +10,13 @@ import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertTrue;
 
-public class MyAccountRegistration_05 extends TestBaseRapor {
-    //31. Registration with empty Email-id & password
+public class MyAccountRegistration_04 extends TestBaseRapor {
+    //30. Registration with empty password
     RegistrationPage registrationPage = new RegistrationPage();
 
     @Test
-    public void myAccountRegistration_05() {
-        extentTest = extentReports.createTest("MyAccountRegistration_05", "Bos kullanici adi, bos password ile kayit gerceklesmemeli.");
+    public void myAccountRegistration_04() {
+        extentTest = extentReports.createTest("MyAccountRegistration_04", "Bos password ile kayit gerceklesmemeli.");
         //1) Open the browser
         //2) Enter the URL “http://practice.automationtesting.in/”
         Driver.getDriver().get(ConfigurationReader.getProperty("base_url"));
@@ -28,11 +28,11 @@ public class MyAccountRegistration_05 extends TestBaseRapor {
         ReusableMethods.clickWithJS(registrationPage.myAccountButton);
         extentTest.info("myAccountButton clicked.");
 
-        //4) Enter empty Email Address in Email-Address textbox
+        //4) Enter valid Email Address in Email-Address textbox
         Driver.getDriver().navigate().refresh();
         ReusableMethods.clickWithJS(registrationPage.myAccountButton);
-        registrationPage.emailBox.sendKeys("", Keys.ENTER);
-        extentTest.info("Entered empty Email Address in Email-Address textbox.");
+        registrationPage.emailBox.sendKeys(ConfigurationReader.getProperty("username"), Keys.ENTER);
+        extentTest.info("Entered username in username textbox.");
 
         //5) Enter empty password in password textbox
         registrationPage.passwordBox.sendKeys("");
@@ -40,12 +40,12 @@ public class MyAccountRegistration_05 extends TestBaseRapor {
 
         //6) Click on Register button
         registrationPage.registerButton.click();
-        extentTest.info("RegisterButton clicked.");
+        extentTest.info("The registerButton clicked.");
 
-        //7) Registration must fail with a warning message(ie please provide valid email address)
-        assertTrue(registrationPage.errorMessage.isDisplayed(), "Warning message is not displayed.");
-        extentTest.info("Registration is fail with a warning message.");
-        extentTest.pass("Bos kullanici adi, bos password ile kayit gerceklesmedi.");
+        //7) Registration must fail with a warning message(ie please enter an account password)
+        assertTrue(registrationPage.errorMessage.isDisplayed(), "errorMessage -> 'Error: Username is required.' is not displayed!!");
+        extentTest.info("'Error: Password is required.' is displayed.");
+        extentTest.pass("Log-in with valid username and empty password test PASS.");
     }
 
 }
