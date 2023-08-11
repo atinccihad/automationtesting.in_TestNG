@@ -43,6 +43,7 @@ public class Shop_04 extends TestBaseRapor {
         //5) Now user can view the popular products only
         select.selectByIndex(1);
         extentTest.info("Populer urunlere gore sirala secenegi tiklandi.");
+
         extentTest.pass("Shop-Default Sorting Functionality test PASS.");
 
     }
