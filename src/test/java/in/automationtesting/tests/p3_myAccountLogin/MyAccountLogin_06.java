@@ -44,6 +44,7 @@ public class MyAccountLogin_06 extends TestBaseRapor {
         assert homePage.wrongText.isDisplayed();
         extentTest.info("Beklenen karakterler goruntulendi.");
         Driver.getDriver().navigate().refresh();
+
         extentTest.pass("PASS");
     }
 
