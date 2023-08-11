@@ -45,6 +45,7 @@ public class MyAccountRegistration_02 extends TestBaseRapor {
         System.out.println(registrationPage.emailWarningMessage.getText());
         assertTrue(registrationPage.emailWarningMessage.getText().contains("Error: Please provide a valid email address."), "The password you entered for the username invalidMail is incorrect. Lost your password? mesaji goruntulenmedi!");
         extentTest.info("invalidMail  assertion.");
+
         extentTest.pass("Registration with invalid email id test PASS.");
     }
 
