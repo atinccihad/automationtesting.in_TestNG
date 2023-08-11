@@ -41,6 +41,7 @@ public class Shop_03 extends TestBaseRapor {
         //System.out.println(shopPage.seleniumElementleri.get(0).getText());
         assertEquals(shopPage.seleniumElementleri.get(0), shopPage.seleniumFirstElement, "Siralama secenegine gore bekledigimiz siralama olusmadi!");
         extentTest.info("Siralama secenegine gore beklenilen siralama olustu.");
+
         extentTest.pass("Shop-Default Sorting Functionality test PASS.");
     }
 
