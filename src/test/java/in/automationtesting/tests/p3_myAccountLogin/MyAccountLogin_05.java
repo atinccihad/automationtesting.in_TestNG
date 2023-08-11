@@ -48,6 +48,7 @@ public class MyAccountLogin_05 extends TestBaseRapor {
         //7) Proper error must be displayed(ie Invalid username) and prompt to enter login again
         assert homePage.wrongText.isDisplayed();
         Driver.getDriver().navigate().refresh();
+
         extentTest.pass("PASS");
     }
 
