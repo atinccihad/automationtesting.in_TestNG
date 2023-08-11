@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 public class Shop_11 extends TestBaseRapor {
-    //41. Shop-Add to Basket-View Basket Functionality
+    //42. Shop-Add to Basket-View Basket through Item link
     ShopPage shopPage = new ShopPage();
     HomePage homePage = new HomePage();
     Actions actions = new Actions(Driver.getDriver());
@@ -157,8 +157,8 @@ public class Shop_11 extends TestBaseRapor {
         softAssert.assertTrue(shopPage.thanksMessage.isDisplayed(), "Tesekkur mesahi gorulmedi!!");
         extentTest.info("ourBankDetails isDisplayed.");
         softAssert.assertAll();
-        extentTest.pass("Alışveriş-Sepete Ekle-Sepete Bak İşlevselliği testi PASS.");
 
+        extentTest.pass("Alışveriş-Sepete Ekle-Sepete Bak İşlevselliği testi PASS.");
     }
 
 }
