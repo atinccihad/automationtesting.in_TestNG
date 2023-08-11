@@ -166,7 +166,9 @@ public class HomePage {
     @FindBy(xpath = "//table[@class=\"shop_table order_details\"]") public WebElement orderDetailsAllPage;
     @FindBy(xpath = "//table[@class=\"shop_table customer_details\"]") public WebElement customerDetailsAllPage;
     @FindBy(xpath = "//div/address") public WebElement billingAddressDetailsAllPage;
-
+    @FindBy(className = "order-number") public WebElement siparisNumarasi;
+    @FindBy(className = "order-date") public WebElement siparisTarihi;
+    @FindBy(className = "order-status") public WebElement siparisDurumu;
 
 
 }
