@@ -14,8 +14,6 @@ import static org.testng.AssertJUnit.assertEquals;
 public class MyAccount_01 extends TestBaseRapor {
     //44. My Accounts - Dashboard
     HomePage homePage = new HomePage();
-    ShopPage shopPage = new ShopPage();
-    SoftAssert softAssert = new SoftAssert();
 
     @Test
     public void myAccountsDashboard() {
