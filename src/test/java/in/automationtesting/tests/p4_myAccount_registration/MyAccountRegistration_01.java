@@ -47,6 +47,7 @@ public class MyAccountRegistration_01 extends TestBaseRapor {
         String expectedUrl = ConfigurationReader.getProperty("base_url");
         assertEquals("Navigated to the Home page FAIL !!", expectedUrl, actualUrl);
         extentTest.info("Navigated to the Home page.");
+
         extentTest.pass("Registration-Sign-in test PASS.");
     }
 }
