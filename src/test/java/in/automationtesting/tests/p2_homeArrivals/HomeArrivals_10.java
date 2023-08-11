@@ -158,7 +158,6 @@ public class HomeArrivals_10 extends TestBaseRapor {
         softAssert.assertTrue(homePage.billingdetailsHaveACouponElement.isDisplayed(), "Have a coupon is not displayed!!");
         extentTest.info("billingdetailsHaveACouponElement isDisplayed.");
         extentTest.pass("Fonksiyonlar test edildi.");
-
         softAssert.assertAll();
     }
 
