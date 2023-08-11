@@ -13,6 +13,7 @@ import org.testng.asserts.SoftAssert;
 import static org.testng.AssertJUnit.assertEquals;
 
 public class Shop_12 extends TestBaseRapor {
+    //43. Shop-Add to Basket-View Basket-Tax Functionality
     HomePage homepage = new HomePage();
     ShopPage shopPage = new ShopPage();
     SoftAssert softAssert = new SoftAssert();
@@ -20,7 +21,6 @@ public class Shop_12 extends TestBaseRapor {
     @Test
     public void ShopAdd() {
         extentTest = extentReports.createTest("Shop_12", "Shop-Add to Basket-View Basket-Tax Functionality.");
-        //43. Shop-Add to Basket-View Basket-Tax Functionality
         //    1) Open the browser
         //   2) Enter the URL “http://practice.automationtesting.in/”
         Driver.getDriver().get(ConfigurationReader.getProperty("base_url"));
@@ -89,7 +89,7 @@ public class Shop_12 extends TestBaseRapor {
         double taxForotherCountries = Double.parseDouble(shopPage.taxForOtherCountries.getText().substring(1));
         assertEquals((totalAtLastPage * 5) / 100, taxForotherCountries);
         extentTest.info("vergi oranlari dogrulandi.");
-        extentTest.pass("Shop-Add to Basket-View Basket-Tax Functionality test PASS.");
 
+        extentTest.pass("Shop-Add to Basket-View Basket-Tax Functionality test PASS.");
     }
 }
