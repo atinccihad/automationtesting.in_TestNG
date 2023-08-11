@@ -47,6 +47,7 @@ public class MyAccountRegistration_03 extends TestBaseRapor {
         //7) Registration must fail with a warning message(ie please provide valid email address)
         assertTrue("Uyari mesaji goruntulenmedi!!", registrationPage.usernameIsRequired.isDisplayed());
         extentTest.info("Uyari mesaji dogrulandi.");
+
         extentTest.pass("Registration with empty email test PASS.");
     }
 
