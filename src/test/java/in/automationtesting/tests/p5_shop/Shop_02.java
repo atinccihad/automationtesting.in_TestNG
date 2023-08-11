@@ -37,6 +37,7 @@ public class Shop_02 extends TestBaseRapor {
         //5) Now user can view only that particular product
         assertTrue(shopPage.androidUrun.isDisplayed(), "androidUrun gorunmuyor!");
         extentTest.info("androidUrun gorundugu dogrulandi.");
+
         extentTest.pass("Shop-Product Categories Functionality test PASS.");
     }
 
