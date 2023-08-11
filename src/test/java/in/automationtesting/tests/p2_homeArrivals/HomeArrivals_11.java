@@ -174,7 +174,6 @@ public class HomeArrivals_11 extends TestBaseRapor {
         softAssert.assertTrue(homePage.billingdetailsBillingAdress.isDisplayed(), "BillingAdress Details is not displayed!!");
         extentTest.info("billingdetailsBillingAdress is displayed.");
         extentTest.pass("Fonksiyonlar test edildi.");
-
         softAssert.assertAll();
     }
 
