@@ -45,6 +45,7 @@ public class MyAccountRegistration_05 extends TestBaseRapor {
         //7) Registration must fail with a warning message(ie please provide valid email address)
         assertTrue(registrationPage.errorMessage.isDisplayed(), "Warning message is not displayed.");
         extentTest.info("Registration is fail with a warning message.");
+
         extentTest.pass("Bos kullanici adi, bos password ile kayit gerceklesmedi.");
     }
 
