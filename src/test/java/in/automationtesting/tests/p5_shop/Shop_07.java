@@ -60,6 +60,7 @@ public class Shop_07 extends TestBaseRapor {
         assertNotEquals(Driver.getDriver().getCurrentUrl(), ConfigurationReader.getProperty("checkoutUrl"), "url'ler beklenmeyen sekilde ayni!!");
         extentTest.info("url'lerin esit olmadigi dogrulandi.");
         extentTest.fail("FAIL");
+
         extentTest.pass("PASS");
     }
 
