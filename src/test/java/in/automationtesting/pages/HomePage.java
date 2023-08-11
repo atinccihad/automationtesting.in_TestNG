@@ -159,5 +159,7 @@ public class HomePage {
     @FindBy(xpath = "//span[.='Sale!']") public WebElement saleBtn;
     @FindBy(xpath = "//p[@class='price']/del/span") public WebElement oldPrice;
     @FindBy(xpath = "//p[@class='price']//ins/span") public WebElement actualPrice;
+    @FindBy(xpath = "//a[@href=\"https://practice.automationtesting.in/my-account/orders/\"]") public WebElement ordersButton;
+    @FindBy(xpath = "//tbody/tr") public List<WebElement> ordersList;
 
 }
