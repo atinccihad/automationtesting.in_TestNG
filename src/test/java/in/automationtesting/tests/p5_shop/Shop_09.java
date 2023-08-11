@@ -37,6 +37,7 @@ public class Shop_09 extends TestBaseRapor {
         //5) User can clearly view the actual price with old price stricken for the sale written products
         assertTrue(homepage.actualPrice.isDisplayed() && homepage.oldPrice.isDisplayed());
         extentTest.info("actualPrice assertion.");
+
         extentTest.pass("Shop-Sale Functionality test PASS.");
     }
 
