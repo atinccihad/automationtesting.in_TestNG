@@ -76,6 +76,7 @@ public class Shop_10 extends TestBaseRapor {
         double taxForotherCountries = Double.parseDouble(shopPage.taxForOtherCountries.getText().substring(1));
         assertEquals((totalAtLastPage * 5) / 100, taxForotherCountries);
         extentTest.info("totalAtLastPage * 5) / 100, taxForotherCountries -> EQUAL");
+
         extentTest.pass("Shop-Add to Basket-View Basket Functionality test PASS.");
     }
 
