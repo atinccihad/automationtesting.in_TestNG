@@ -38,6 +38,7 @@ public class Shop_06 extends TestBaseRapor {
         ReusableMethods.waitFor(2);
         ReusableMethods.jsExecutorScrool(shopPage.seleniumElementleri.get(7));
         extentTest.info("Siralanmis urunler goruntulendi.");
+
         extentTest.pass("Shop-Default Sorting Functionality test PASS.");
     }
 
