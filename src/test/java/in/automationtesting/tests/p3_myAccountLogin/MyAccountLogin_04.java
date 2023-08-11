@@ -50,6 +50,7 @@ public class MyAccountLogin_04 extends TestBaseRapor {
         assert homePage.wrongText.isDisplayed();
         extentTest.info("Hata mesaji goruntulendi.");
         Driver.getDriver().navigate().refresh();
+
         extentTest.pass("PASS");
     }
 
