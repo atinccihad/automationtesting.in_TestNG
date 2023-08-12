@@ -172,5 +172,9 @@ public class HomePage {
     @FindBy(xpath = "(//a[@href=\"https://practice.automationtesting.in/my-account/edit-address/\"])[1]") public WebElement addresses;
     @FindBy(xpath = "//div[@class='u-column1 col-1 woocommerce-Address']") public WebElement billingAddress;
     @FindBy(xpath = "//div[@class='u-column2 col-2 woocommerce-Address']") public WebElement shippingAddress;
+    @FindBy(xpath = "//a[@href=\"https://practice.automationtesting.in/my-account/edit-address/shipping\"]") public WebElement shippingAddressEdit;
+    @FindBy(xpath = "//a[@href=\"https://practice.automationtesting.in/my-account/edit-address/shipping\"]") public WebElement billingAddressEdit;
+    @FindBy(xpath = "//input[@id=\"shipping_address_1\"]") public WebElement streetAddressBox;
+    @FindBy(xpath = "(//input[@type=\"submit\"])[1]") public WebElement saveAddressButton;
 
 }
