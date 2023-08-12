@@ -169,6 +169,8 @@ public class HomePage {
     @FindBy(className = "order-number") public WebElement siparisNumarasi;
     @FindBy(className = "order-date") public WebElement siparisTarihi;
     @FindBy(className = "order-status") public WebElement siparisDurumu;
-
+    @FindBy(xpath = "(//a[@href=\"https://practice.automationtesting.in/my-account/edit-address/\"])[1]") public WebElement addresses;
+    @FindBy(xpath = "//div[@class='u-column1 col-1 woocommerce-Address']") public WebElement billingAddress;
+    @FindBy(xpath = "//div[@class='u-column2 col-2 woocommerce-Address']") public WebElement shippingAddress;
 
 }
