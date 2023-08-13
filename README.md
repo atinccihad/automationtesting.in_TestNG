@@ -11,7 +11,7 @@ Site to be tested:  http://practice.automationtesting.in/
 4) Now click on Home menu button
 5) Test whether the Home page has Three Sliders only
 6) The Home page must contains only three sliders
-   
+   report-> http://localhost:63342/automationtesting.in_TestNG_2/target/Report/report20230813102042.html?_ijt=nqr7lee109v3gkvsa2k1hvq32q&_ij_reload=RELOAD_ON_SAVE
 --------------------------------------
 <h4>2. Home page with three Arrivals only</h4>
 
