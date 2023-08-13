@@ -180,4 +180,5 @@ public class HomePage {
     @FindBy(xpath = "//input[@id='account_email']") public WebElement emailAdressBox;
     @FindBy(xpath = "//input[@id='password_current']") public WebElement password_current;
     @FindBy(xpath = "//input[@id='password_current']") public WebElement passwordChangeText;
+    @FindBy(xpath = "(//a[@href=\"https://practice.automationtesting.in/my-account/customer-logout/\"])[1]") public WebElement logoutButton;
 }
