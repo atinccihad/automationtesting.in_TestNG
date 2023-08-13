@@ -176,5 +176,8 @@ public class HomePage {
     @FindBy(xpath = "//a[@href=\"https://practice.automationtesting.in/my-account/edit-address/shipping\"]") public WebElement billingAddressEdit;
     @FindBy(xpath = "//input[@id=\"shipping_address_1\"]") public WebElement streetAddressBox;
     @FindBy(xpath = "(//input[@type=\"submit\"])[1]") public WebElement saveAddressButton;
-
+    @FindBy(xpath = "(//a[@href=\"https://practice.automationtesting.in/my-account/edit-account/\"])[1]") public WebElement accountDetails;
+    @FindBy(xpath = "//input[@id='account_email']") public WebElement emailAdressBox;
+    @FindBy(xpath = "//input[@id='password_current']") public WebElement password_current;
+    @FindBy(xpath = "//input[@id='password_current']") public WebElement passwordChangeText;
 }
