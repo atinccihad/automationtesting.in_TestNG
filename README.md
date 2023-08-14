@@ -336,7 +336,7 @@ because the coupon is applicable for the book price > 450 rps
 18) Now click on Place Order button to complete process
 19) On clicking place-order button user completes the process where the page navigates to Order confirmation page
 with order details,bank details,customer details and billing details.
-   report->   
+   report->   ![img_17.png](img_17.png)
 
 <h2>MY ACCOUNT - LOGIN</h2>
 
@@ -350,7 +350,7 @@ with order details,bank details,customer details and billing details.
 5) Enter password in password textbox
 6) Click on login button
 7) User must successfully login to the web page
-   report->   ![image](https://github.com/atinccihad/automationtesting.in_TestNG/assets/99203167/6cea4744-029e-4692-9b2a-69399ed30af1)
+   report->   ![img_18.png](img_18.png)
 
 ---------------------------------------------------------
 <h4>20. Log-in with incorrect username and incorrect password</h4>
@@ -362,7 +362,7 @@ with order details,bank details,customer details and billing details.
 5) Enter incorrect password in password textbox.
 6) Click on login button
 7) Proper error must be displayed(ie Invalid username) and prompt to enter login again
-   report->   ![image](https://github.com/atinccihad/automationtesting.in_TestNG/assets/99203167/f9305f59-6745-4472-be04-17e8ced21cf6)
+   report->  ![img_19.png](img_19.png)
 
 ---------------------------------------------------
 <h4>21. Log-in with correct username and empty password</h4>
@@ -374,8 +374,7 @@ with order details,bank details,customer details and billing details.
 5) Now enter empty password in the password textbox
 6) Click on login button.
 7) Proper error must be displayed(ie Invalid password) and prompt to enter login again
-   report->  ![image](https://github.com/atinccihad/automationtesting.in_TestNG/assets/99203167/cd797aaa-732a-43c9-a939-5d30930c4069)
- 
+   report->  ![img_20.png](img_20.png)
 -------------------------------------------------
 <h4>22. Log-in with empty username and valid password</h4>
 
@@ -386,7 +385,7 @@ with order details,bank details,customer details and billing details.
 5) Now enter valid password in the password textbox
 6) Click on login button.
 7) Proper error must be displayed(ie Invalid username) and prompt to enter login again
-   report->  ![image](https://github.com/atinccihad/automationtesting.in_TestNG/assets/99203167/3a4ea035-0a21-4119-939c-9123ff1635de)
+   report->  ![img_21.png](img_21.png)
 
 -------------------------------------------------
 <h4>23. Log-in with empty username and empty password</h4>
@@ -398,7 +397,7 @@ with order details,bank details,customer details and billing details.
 5) Now enter valid password in the password textbox
 6) Click on login button.
 7) Proper error must be displayed(ie required username) and prompt to enter login again
-   report->   ![image](https://github.com/atinccihad/automationtesting.in_TestNG/assets/99203167/98b6159b-5e7a-40c9-ad94-698bde21a350)
+   report->   ![img_22.png](img_22.png)
 
 -------------------------------------
 <h4>24. Log-in -Password should be masked</h4>
@@ -408,7 +407,7 @@ with order details,bank details,customer details and billing details.
 3) Click on My Account Menu
 4) Enter the password field with some characters.
 5) The password field should display the characters in asterisks or bullets such that the password is not visible on the screen
-   report->   ![image](https://github.com/atinccihad/automationtesting.in_TestNG/assets/99203167/6b038914-d915-4a9a-9e7f-a907b9976855)
+   report->  ![img_23.png](img_23.png) 
 
 --------------------------------
 <h4>25. Login-Handles case sensitive</h4>
@@ -420,7 +419,7 @@ with order details,bank details,customer details and billing details.
 5) Enter the case changed password in the password textbox
 6) Now click on login button
 7) Login must fail saying incorrect username/password.
-   report->   ![image](https://github.com/atinccihad/automationtesting.in_TestNG/assets/99203167/9562dd70-7164-451b-9251-63503d4dea48)
+   report->   ![img_24.png](img_24.png)
 
 ------------------------
 <h4>26. Login-Authentication</h4>
@@ -434,7 +433,7 @@ with order details,bank details,customer details and billing details.
 7) Once your are logged in, sign out of the site
 8) Now press back button
 9) User shouldn’t be signed in to his account rather a general webpage must be visible
-   report->  ![image](https://github.com/atinccihad/automationtesting.in_TestNG/assets/99203167/ed13b42e-400c-4742-b5dc-538b0b44424d)
+   report->  ![img_25.png](img_25.png)
 
 
 <h2>MY ACCOUNT - REGISTRATION</h2>
@@ -449,7 +448,7 @@ with order details,bank details,customer details and billing details.
 5) Enter your own password in password textbox
 6) Click on Register button
 7) User will be registered successfully and will be navigated to the Home page
-   report->  ![image](https://github.com/atinccihad/automationtesting.in_TestNG/assets/99203167/1e2984ad-d92f-4586-bda1-64a868ae0d7d)
+   report->  ![img_26.png](img_26.png)
 
 --------------------------------------
 <h4>28. Registration with invalid Email-id</h4>
@@ -461,7 +460,7 @@ with order details,bank details,customer details and billing details.
 5) Enter your own password in password textbox
 6) Click on Register button
 7) Registration must fail with a warning message(ie You must enter a valid email address)
-   report->  ![image](https://github.com/atinccihad/automationtesting.in_TestNG/assets/99203167/e24c6a73-bd06-4dce-9508-5cf81c3de508)
+   report->  ![img_27.png](img_27.png)
 
 ------------------------------------
 <h4>29. Registration with empty Email-id</h4>
@@ -473,7 +472,7 @@ with order details,bank details,customer details and billing details.
 5) Enter your own password in password textbox
 6) Click on Register button
 7) Registration must fail with a warning message(ie please provide valid email address)
-   report->  ![image](https://github.com/atinccihad/automationtesting.in_TestNG/assets/99203167/8b83b95c-d223-48f0-a978-14f28d91746b)
+   report->  ![img_28.png](img_28.png)
 
 ------------------------------------
 <h4>30. Registration with empty password</h4>
@@ -485,7 +484,7 @@ with order details,bank details,customer details and billing details.
 5) Enter empty password in password textbox
 6) Click on Register button
 7) Registration must fail with a warning message(ie please enter an account password)
-   report->  ![image](https://github.com/atinccihad/automationtesting.in_TestNG/assets/99203167/649c298b-a446-4f8c-ac48-ba1a82769ac6)
+   report-> ![img_29.png](img_29.png)
 
 -----------------------------------------------
 <h4>31. Registration with empty Email-id & password</h4>
@@ -497,7 +496,7 @@ with order details,bank details,customer details and billing details.
 5) Enter empty password in password textbox
 6) Click on Register button
 7) Registration must fail with a warning message(ie please provide valid email address)
-   report->   ![image](https://github.com/atinccihad/automationtesting.in_TestNG/assets/99203167/94ec46b2-3031-46e8-8e2d-b24496f81656)
+   report->  ![img_30.png](img_30.png)
 
 <h2>SHOP</h2>
 
