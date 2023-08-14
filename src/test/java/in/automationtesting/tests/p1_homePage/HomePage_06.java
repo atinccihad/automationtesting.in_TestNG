@@ -88,9 +88,4 @@ public class HomePage_06 extends TestBaseRapor {
 
     }
 
-    @AfterClass
-    public void closeDriver() {
-        Driver.getDriver().close();
-    }
-
 }
