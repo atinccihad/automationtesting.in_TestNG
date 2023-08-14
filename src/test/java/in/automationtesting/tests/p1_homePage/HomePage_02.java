@@ -53,7 +53,5 @@ public class HomePage_02 extends TestBaseRapor {
         extentTest.pass("The homepage contains only three Arrivals.");
     }
 
-    @AfterClass
-    public void closeDriver() {Driver.getDriver().close();}
 
 }
