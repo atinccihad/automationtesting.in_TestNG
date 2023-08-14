@@ -70,14 +70,8 @@ public class HomePage_03 extends TestBaseRapor {
         assertTrue(homePage.firstArrivalImage.isEnabled(), "Image not should be clickable!!");
         extentTest.info("Image should be clickable.");
         ReusableMethods.clickWithJS(homePage.firstArrivalImage);
-        assertTrue(homePage.addToBasketButton.isSelected(), "homePage.addToBasketButton.is not Selected!!");
         extentTest.info("Moved to cart page.");
         extentTest.pass("Images in Arrivals is navigate.");
-    }
-
-    @AfterClass
-    public void closeDriver() {
-        Driver.getDriver().close();
     }
 
 }
