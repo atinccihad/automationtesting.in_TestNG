@@ -85,7 +85,4 @@ public class HomePage_05 extends TestBaseRapor {
         softAssert.assertAll();
     }
 
-    @AfterClass
-    public void closeDriver() {Driver.getDriver().close();}
-
 }
