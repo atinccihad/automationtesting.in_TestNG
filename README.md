@@ -11,7 +11,8 @@ Site to be tested:  http://practice.automationtesting.in/
 4) Now click on Home menu button
 5) Test whether the Home page has Three Sliders only
 6) The Home page must contains only three sliders
-   report-> ![Screenshot of TestNG Test](https://github.com/atinccihad/automationtesting.in_TestNG/assets/99203167/bdb13368-56f8-4a78-b270-791d41ca5f6b)
+   report-> ![image](https://github.com/atinccihad/automationtesting.in_TestNG/assets/99203167/c1848196-9b27-4fd7-87f8-c7882850b6b2)
+
 --------------------------------------
 <h4>2. Home page with three Arrivals only</h4>
 
@@ -21,7 +22,8 @@ Site to be tested:  http://practice.automationtesting.in/
 4) Now click on Home menu button
 5) Test whether the Home page has Three Arrivals only
 6) The Home page must contains only three Arrivals
-   report-> ![image](https://github.com/atinccihad/automationtesting.in_TestNG/assets/99203167/04b13810-1b3d-4712-878a-22144284b95d)
+   report-> ![image](https://github.com/atinccihad/automationtesting.in_TestNG/assets/99203167/655c9e26-c3d6-4b4a-9745-9fcfcb5a73ab)
+
 
 -------------------------------------------------
 <h4>3. Home page - Images in Arrivals should navigate</h4>
@@ -35,7 +37,8 @@ Site to be tested:  http://practice.automationtesting.in/
 7) Now click the image in the Arrivals
 8) Test whether it is navigating to next page where the user can add that book into his basket.
 9) Image should be clickable and shoul navigate to next page where user can add that book to his basket
-    report-> ![image](https://github.com/atinccihad/automationtesting.in_TestNG/assets/99203167/75b20661-ba52-4026-9dab-6cf5bc2e1f69)
+    report-> ![image](https://github.com/atinccihad/automationtesting.in_TestNG/assets/99203167/314eb390-19eb-4b2d-a3b6-590287d599a9)
+
 
 -------------------------------------------
 <h4>4. Home page - Arrivals-Images-Description</h4>
@@ -51,7 +54,7 @@ Site to be tested:  http://practice.automationtesting.in/
 9) Image should be clickable and shoul navigate to next page where user can add that book to his basket
 10) Click on Description tab for the book you clicked on.
 11) There should be a description regarding that book the user clicked on
-    report-> ![image](https://github.com/atinccihad/automationtesting.in_TestNG/assets/99203167/52b18290-5b31-4a10-9bfa-090aa8bd79a3)
+    report-> ![image](https://github.com/atinccihad/automationtesting.in_TestNG/assets/99203167/facb2a37-a577-4482-ae78-4396ce8b2043)
 
 ---------------------------------------
 <h4>5. Home page - Arrivals-Images-Reviews</h4>
