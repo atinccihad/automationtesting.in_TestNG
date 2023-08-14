@@ -70,7 +70,7 @@ public class HomePage_04 extends TestBaseRapor {
         extentTest.info("Image should be clickable.");
         ReusableMethods.clickWithJS(homePage.firstArrivalImage);
         extentTest.info("First image is clicked.");
-        //assertTrue(homePage.addToBasketButton.isSelected(),"homePage.addToBasketButton.is not Selected!!");
+        assertTrue(homePage.addToBasketButton.isSelected(),"homePage.addToBasketButton.is not Selected!!");
         extentTest.info("Moved to cart page.");
         Driver.getDriver().navigate().refresh();
 
@@ -82,10 +82,6 @@ public class HomePage_04 extends TestBaseRapor {
         assertTrue(homePage.description.isDisplayed(),"description is not Displayed!!");
         extentTest.info("Description is displayed.");
         extentTest.pass("The description test PASS.");
-    }
-    @AfterClass
-    public void closeDriver() {
-        Driver.getDriver().close();
     }
 
 }
