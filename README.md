@@ -11,7 +11,7 @@ Site to be tested:  http://practice.automationtesting.in/
 4) Now click on Home menu button
 5) Test whether the Home page has Three Sliders only
 6) The Home page must contains only three sliders
-   report-> ![image](https://github.com/atinccihad/automationtesting.in_TestNG/assets/99203167/c1848196-9b27-4fd7-87f8-c7882850b6b2)
+   report-> ![img.png](img.png)
 
 --------------------------------------
 <h4>2. Home page with three Arrivals only</h4>
@@ -22,7 +22,7 @@ Site to be tested:  http://practice.automationtesting.in/
 4) Now click on Home menu button
 5) Test whether the Home page has Three Arrivals only
 6) The Home page must contains only three Arrivals
-   report-> ![image](https://github.com/atinccihad/automationtesting.in_TestNG/assets/99203167/655c9e26-c3d6-4b4a-9745-9fcfcb5a73ab)
+   report-> ![img_1.png](img_1.png)
 
 
 -------------------------------------------------
@@ -37,7 +37,7 @@ Site to be tested:  http://practice.automationtesting.in/
 7) Now click the image in the Arrivals
 8) Test whether it is navigating to next page where the user can add that book into his basket.
 9) Image should be clickable and shoul navigate to next page where user can add that book to his basket
-    report-> ![image](https://github.com/atinccihad/automationtesting.in_TestNG/assets/99203167/314eb390-19eb-4b2d-a3b6-590287d599a9)
+    report-> ![img_2.png](img_2.png)
 
 
 -------------------------------------------
@@ -54,7 +54,7 @@ Site to be tested:  http://practice.automationtesting.in/
 9) Image should be clickable and shoul navigate to next page where user can add that book to his basket
 10) Click on Description tab for the book you clicked on.
 11) There should be a description regarding that book the user clicked on
-    report-> ![image](https://github.com/atinccihad/automationtesting.in_TestNG/assets/99203167/facb2a37-a577-4482-ae78-4396ce8b2043)
+    report-> ![img_3.png](img_3.png)
 
 ---------------------------------------
 <h4>5. Home page - Arrivals-Images-Reviews</h4>
@@ -70,7 +70,7 @@ Site to be tested:  http://practice.automationtesting.in/
 9) Image should be clickable and shoul navigate to next page where user can add that book to his basket
 10) Now clock on Reviews tab for the book you clicked on.
 11) There should be a Reviews regarding that book the user clicked on
-    report-> ![image](https://github.com/atinccihad/automationtesting.in_TestNG/assets/99203167/1d2bb7b2-98b0-4950-8396-d7d62b8ca787)
+    report-> ![img_4.png](img_4.png)
 
 ---------------------------------------------
 <h4>6. Home page - Arrivals-Images-Add to Basket</h4>
@@ -87,7 +87,7 @@ Site to be tested:  http://practice.automationtesting.in/
 10) Click on the Add To Basket button which adds that book to your basket
 11) User can view that Book in the Menu item with price.
 12) User can add a book by clicking on Add To Basket button which adds that book in to his Basket
-    report-> ![image](https://github.com/atinccihad/automationtesting.in_TestNG/assets/99203167/d959dbe6-80b2-4e59-a978-d2ed2718d17b)
+    report-> ![img_5.png](img_5.png)
 
 ------------------------------------------------------
 <h4>7. Home page - Arrivals-Add to Basket with more books</h4>
@@ -107,7 +107,7 @@ Site to be tested:  http://practice.automationtesting.in/
 13) Select more books than the books in stock.Ex if the stock has 20 books, try to add 21.
 14) Click the add to basket button
 15) Now it throws an error prompt like you must enter a value between 1 and 20
-   report-> ![image](https://github.com/atinccihad/automationtesting.in_TestNG/assets/99203167/d832e2ab-b24e-4ec8-8fe4-a20f3e9e2830)
+   report-> ![img_6.png](img_6.png)
 
 --------------------------------------
 <h4>8. Home-Arrivals-Add to Basket-Items</h4>
@@ -125,7 +125,7 @@ Site to be tested:  http://practice.automationtesting.in/
 11) User can view that Book in the Menu item with price.
 12) Now click on Item link which navigates to proceed to check out page.
 13) User can click on the Item link in menu item after adding the book in to the basket which leads to the check out page
-    report-> ![image](https://github.com/atinccihad/automationtesting.in_TestNG/assets/99203167/d4614521-fc74-4715-ae5a-8f789e110f7c)
+    report-> ![img_7.png](img_7.png)
 
 --------------------------------------------
 <h4>9. Home-Arrivals-Add to Basket-Items-Coupon</h4>
@@ -145,7 +145,7 @@ Site to be tested:  http://practice.automationtesting.in/
 13) User can click on the Item link in menu item after adding the book in to the basket which leads to the check out page
 14) Enter the Coupon code as ‘krishnasakinala’ to get 50rps off on the total.
 15) User can able to apply coupon by entering ‘krishnasakinala’ in the coupon textbox which give 50rps off on the total price
-    report-> ![image](https://github.com/atinccihad/automationtesting.in_TestNG/assets/99203167/4a24c5ef-736b-4b3b-ab2c-0f4d78fb2fec)
+    report-> ![img_8.png](img_8.png)
 
 ------------------------------------------------------
 <h4>10. Home-Arrivals-Add to Basket-Items-Coupon value<450</h4>
@@ -166,7 +166,7 @@ Site to be tested:  http://practice.automationtesting.in/
 14) Enter the Coupon code as ‘krishnasakinala’ to get 50rps off on the total.
 15) User can not able to apply coupon by entering ‘krishnasakinala’ in the coupon textbox which give 50rps off on the total price
 because the coupon is applicable for the book price > 450 rps
-   report->  ![image](https://github.com/atinccihad/automationtesting.in_TestNG/assets/99203167/4670d915-9b4f-4b78-95e1-feb5fee4b116)
+   report->  ![img_9.png](img_9.png)
 
 --------------------------------------------------
 <h4>11. Home-Arrivals-Add to Basket-Items-Remove book</h4>
@@ -185,7 +185,7 @@ because the coupon is applicable for the book price > 450 rps
 12) Now click on Item link which navigates to proceed to check out page.
 13) Now click on Remove this icon in Check out page which removes that book from the grid.
 14) User has the feasibility to remove the book at the time of check out also
-    report->  ![image](https://github.com/atinccihad/automationtesting.in_TestNG/assets/99203167/9bb02f61-5922-4f63-8454-9ee9f78df950)
+    report->  ![img_10.png](img_10.png)
 
 -----------------------------------------------
 <h4>12. Home-Arrivals-Add to Basket-Items-Add book</h4>
@@ -206,7 +206,7 @@ because the coupon is applicable for the book price > 450 rps
 14) Now after the above change ‘Update Basket’ button will turn into Clickable mode.
 15) Now click on Update Basket to reflect those changes
 16) User has the feasibility to Update Basket at the time of check out.
-    report->  ![image](https://github.com/atinccihad/automationtesting.in_TestNG/assets/99203167/2b4c2d9b-92c2-4f1c-a932-28999c5149d4)
+    report->  ![img_11.png](img_11.png)
 
 -----------------------------------------------------------------
 <h4>13. Home-Arrivals-Add to Basket-Items-Check-out-Book Final price</h4>
@@ -225,7 +225,7 @@ because the coupon is applicable for the book price > 450 rps
 12) Now click on Item link which navigates to proceed to check out page.
 13) Now User can find the Total price of the book in the Check out grid.
 14) User has the feasibility to find the total price of the books at to find the total price of the books at the time of check out
-    report->  ![image](https://github.com/atinccihad/automationtesting.in_TestNG/assets/99203167/cc1617d4-e4ff-41d3-8be0-9369a24ec874)
+    report->  ![img_12.png](img_12.png)
 
 --------------------------------------------------------------
 <h4>14. Home-Arrivals-Add to Basket-Items-Check-out-Update Basket</h4>
@@ -246,7 +246,7 @@ because the coupon is applicable for the book price > 450 rps
 14) Now after the above change ‘Update Basket’ button will turn into Clickable mode.
 15) Now click on Update Basket to reflect those changes
 16) User has the feasibility to Update Basket at the time of check out
-    report->  ![image](https://github.com/atinccihad/automationtesting.in_TestNG/assets/99203167/b83a9952-4cd5-4c31-91de-6d775a859bc3)
+    report->  ![img_13.png](img_13.png)
 
 ----------------------------------------------------------------------------
 <h4>15. Home-Arrivals-Add to Basket-Items-Check-out-Total & Sub-total condition</h4>
@@ -266,7 +266,7 @@ because the coupon is applicable for the book price > 450 rps
 13) Now user can find total and subtotal values just above the Proceed to Checkout button.
 14) The total always < subtotal because taxes are added in the subtotal
 15) Total
-    report->  ![image](https://github.com/atinccihad/automationtesting.in_TestNG/assets/99203167/c81de798-a709-4984-8012-b9a7294d3712)
+    report->  ![img_14.png](img_14.png)
 
 --------------------------------------------------------------
 <h4>16. Home-Arrivals-Add to Basket-Items-Check-out functionality</h4>
@@ -288,7 +288,7 @@ because the coupon is applicable for the book price > 450 rps
 15) Now click on Proceed to Check out button which navigates to payment gateway page.
 16) Clicking on Proceed to Checkout button leads to payment gateway page
 17)Clicking on Proceed to Checkout button leads to payment gateway page
-   report->  ![image](https://github.com/atinccihad/automationtesting.in_TestNG/assets/99203167/c2f949d2-57b9-42e6-9888-bb972376fbc2)
+   report-> ![img_15.png](img_15.png) 
 
 ----------------------------------------------------------------
 <h4>17. Home-Arrivals-Add to Basket-Items-Check-out-Payment Gateway</h4>
@@ -311,7 +311,7 @@ because the coupon is applicable for the book price > 450 rps
 16)User can view Billing Details,Order Details,Additional details and Payment gateway details.
 17)Now user can fill his details in billing details form and can opt any payment in the payment gateway like Direct bank transfer,cheque,cash or paypal.
 18)User has the feasibility to add coupon in the payment gateway page and also he can find billing,order and additional details.
-   report->  ![image](https://github.com/atinccihad/automationtesting.in_TestNG/assets/99203167/eadc4b44-a350-469d-a9aa-69de793a2b13)
+   report->  ![img_16.png](img_16.png)
 
 ----------------------------------------------------------------------------
 <h4>18. Home-Arrivals-Add to Basket-Items-Check-out-Payment Gateway-Place order</h4>
@@ -336,7 +336,7 @@ because the coupon is applicable for the book price > 450 rps
 18) Now click on Place Order button to complete process
 19) On clicking place-order button user completes the process where the page navigates to Order confirmation page
 with order details,bank details,customer details and billing details.
-   report->   ![image](https://github.com/atinccihad/automationtesting.in_TestNG/assets/99203167/6252f61a-2228-4b8f-9376-25f07606600e)
+   report->   
 
 <h2>MY ACCOUNT - LOGIN</h2>
 
