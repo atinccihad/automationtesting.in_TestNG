@@ -53,6 +53,4 @@ public class HomePage_01 extends TestBaseRapor {
         extentTest.pass("The homepage contains only three sliders.");
     }
 
-    @AfterClass
-    public void closeDriver() {Driver.getDriver().close();}
 }
