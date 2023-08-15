@@ -509,7 +509,7 @@ with order details,bank details,customer details and billing details.
 4) Adjust the filter by price between 150 to 450 rps
 5) Now click on Filter button
 6) User can view books only between 150 to 450 rps price
-   report->  ![image](https://github.com/atinccihad/automationtesting.in_TestNG/assets/99203167/95ce550a-37b9-4c99-916c-9c536a91917d)
+   report->  ![img_31.png](img_31.png)
 
 -----------------------------------------
 <h4>33. Shop-Product Categories Functionality</h4>
@@ -519,7 +519,7 @@ with order details,bank details,customer details and billing details.
 3) Click on Shop Menu
 4) Click any of the product links available in the product category
 5) Now user can view only that particular product
-   report->  ![image](https://github.com/atinccihad/automationtesting.in_TestNG/assets/99203167/29e48fc3-8c0d-4d4a-a9da-28d980a0f0ad)
+   report-> ![img_32.png](img_32.png)
 
 --------------------------------------
 <h4>34. Shop-Default Sorting Functionality</h4>
@@ -529,7 +529,7 @@ with order details,bank details,customer details and billing details.
 3) Click on Shop Menu
 4) Click on Sort by Popularity item in Default sorting dropdown
 5) Now user can view the popular products only
-   report->   ![image](https://github.com/atinccihad/automationtesting.in_TestNG/assets/99203167/55a97bbb-c963-4ca8-bb87-fd7309712c19)
+   report->  ![img_33.png](img_33.png) 
 
 --------------------------------------
 <h4>35. Shop-Default Sorting Functionality</h4>
@@ -539,7 +539,7 @@ with order details,bank details,customer details and billing details.
 3) Click on Shop Menu
 4) Click on Sort by Average ratings in Default sorting dropdown
 5) Now user can view the popular products only
-   report->  ![image](https://github.com/atinccihad/automationtesting.in_TestNG/assets/99203167/9e8c0a11-2650-47e3-97c1-6b7de46ea970)
+   report->  ![img_34.png](img_34.png)
 
 --------------------------------------
 <h4>36. Shop-Default Sorting Functionality</h4>
@@ -549,7 +549,7 @@ with order details,bank details,customer details and billing details.
 3) Click on Shop Menu
 4) Click on Sort by Newness ratings in Default sorting dropdown
 5) Now user can view the popular products only
-   report->  ![image](https://github.com/atinccihad/automationtesting.in_TestNG/assets/99203167/69252c06-62b3-4127-b45d-455f58515f24)
+   report->  ![img_36.png](img_36.png)
 
 --------------------------------------
 <h4>37. Shop-Default Sorting Functionality</h4>
@@ -559,7 +559,7 @@ with order details,bank details,customer details and billing details.
 3) Click on Shop Menu
 4) Click on Sort by Low to High Item in Default sorting dropdown
 5) Now user can view the popular products only
-   report->  ![image](https://github.com/atinccihad/automationtesting.in_TestNG/assets/99203167/bea17a98-17f3-4400-b766-c62a00a48acb)
+   report->  ![img_37.png](img_37.png)
 
 --------------------------------------
 <h4>38. Shop-Default Sorting Functionality</h4>
@@ -569,7 +569,7 @@ with order details,bank details,customer details and billing details.
 3) Click on Shop Menu
 4) Click on Sort by High to Low Item in Default sorting dropdown
 5) Now user can view the popular products only
-   report->   ![image](https://github.com/atinccihad/automationtesting.in_TestNG/assets/99203167/5710058f-ad6d-4c77-9a45-c1a088fe1ec1)
+   report->   ![img_38.png](img_38.png)
 
 --------------------------------
 <h4>39. Shop-Read More Functionality</h4>
@@ -580,7 +580,7 @@ with order details,bank details,customer details and billing details.
 4) Click on read more button in home page
 5) Read More option indicates the Out Of Stock.
 6) Users cannot add the product which has read more options as it was out of stock.
-   report->   ![image](https://github.com/atinccihad/automationtesting.in_TestNG/assets/99203167/b60b159f-a626-4913-97f5-a5e1fadb5254)
+   report->   
 
 ---------------------------
 <h4>40. Shop-Sale Functionality</h4>
@@ -590,7 +590,7 @@ with order details,bank details,customer details and billing details.
 3) Click on Shop Menu
 4) Click on Sale written product in home page
 5) User can clearly view the actual price with old price stricken for the sale written products
-  report->   ![image](https://github.com/atinccihad/automationtesting.in_TestNG/assets/99203167/7e2fb6f0-194f-41c2-911b-d590535d2681)
+  report->   ![img_39.png](img_39.png)
 
 ------------------------------------------------
 <h4>41. Shop-Add to Basket-View Basket Functionality</h4>
